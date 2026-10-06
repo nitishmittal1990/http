@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.w_ePPE-a.js","assets":"assets.DOAjpBS9.js","comments":"comments.DwDBjUGS.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.SWCZLzn6.js","endpoints":"endpoints.BPfoKaE1.js","files":"files.IkpCjcgM.js","mcp":"mcp.kl0G36TA.js","network":"network.B5UA9Su4.js","permissions":"permissions.BHAs_S4o.js","reads":"reads.Bgov9hIw.js","room":"room.Dy3vHyq9.js","sample":"sample.t8BQC4US.js","self":"artifact.w_ePPE-a.js","user":"user.CB0zJsP2.js"},"transforms":"_transforms.OOT2SKiU.js","comments":"_comments.CVOoGJSh.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.B4FSryPi.js"}                         </script><script>(function(){"use strict";function fr(t){return t==="cookie"||t==="query"?t:void 0}function dr(t){return typeof t=="number"&&Number.isSafeInteger(t)&&t>0?t:void 0}var eo=3e5;function hr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var pr=["light","dark","system"],mr=/^[A-Za-z0-9_-]{1,64}$/,Tt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,vr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function _r(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||vr.has(e)}var Lt="data-ldx-props";function yr(t,e){if(e.toLowerCase()===Lt)return!0;const r=t.getAttribute(Lt);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var to="http://www.w3.org/1999/xhtml",gr="http://www.w3.org/2000/svg",wr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),br=new Set(["script","style"]);function Er(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!wr.has(e):t.namespaceURI===gr?!br.has(e):!1}function tt(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function Sr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&tt(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&tt(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function Ar(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:l,s:u}=Sr(n,e);l===a&&u===0&&a===s||r.replaceData(l,a-l-u,e.slice(l,s-u));const O=r.data,k=t.ownerDocument.getSelection?.()??null,E=k!==null&&k.rangeCount>0&&(k.anchorNode===r||k.focusNode===r)?{anchor:k.anchorNode,anchorOffset:k.anchorOffset,focus:k.focusNode,focusOffset:k.focusOffset}:null;let h=-1,S=-1;for(let p=0;p<O.length&&p<e.length;p++){const F=O.charCodeAt(p),R=e.charCodeAt(p);F!==R&&tt(F,R)&&(h<0&&(h=p),S=p)}const L=h>=0;if(L&&r.replaceData(h,S-h+1,e.slice(h,S+1)),L&&E!==null&&E.anchor!==null&&E.focus!==null)try{k.setBaseAndExtent(E.anchor,E.anchorOffset,E.focus,E.focusOffset)}catch{}}var kr=new Set(["html","head","body","frameset"]);function Rr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&kr.has(t.localName)}function Tr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!mr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Tt.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Tt.test(r))return!1}return!0}function Lr(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Or(t){return t===null||typeof t!="object"?!1:Lr(t.__frame_patch,Tr)}function Mr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Pr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Nr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Cr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&pr.includes(r)}var Fr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],jr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function xr(t){return typeof t=="string"&&jr.includes(t)?t:"other"}var Ir=Object.freeze({until:null,now:!1}),Dr="__claude_hot",Hr="__claude_hot_in",Br=/^__claude_hot(?:_in)?(?::|$)/,Ot=/^[0-9a-z]{1,32}$/,rt=t=>t===void 0?Dr:"__claude_hot:"+t,Le=t=>t===void 0?Hr:"__claude_hot_in:"+t;function qr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&Br.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Ur(t){let e=null;try{e=q(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Ot.test(e.k)?null:he(e.g)?{k:e.k,g:e.g}:{k:e.k}}var ro=262144,Kr=3e3,Gr=5e3,Mt=/^[a-z0-9._:-]{1,64}$/,$r=["none","hot-restart","hard-reload"],zr=["asset","doc","added","removed"],Vr=1500,Wr=/^[0-9a-f]{64}$/;function q(t){return t!==null&&typeof t=="object"?t:null}function he(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Pt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Xr(t){return t===void 0||typeof t=="string"&&Mt.test(t)}function Nt(t){const e=q(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function nt(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Pt(e.seq)&&typeof e.handoff=="string"&&Fr.includes(e.handoff)&&Xr(e.note)}function Ct(t){const e=q(t);return e!==null&&he(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||nt(e.from))}function Yr(t){const e=q(t);return e!==null&&e.kv===1&&he(e.gen)&&nt(e.from)&&Object.hasOwn(e,"data")}function Jr(t){const e=q(t);return e!==null&&e.__frame_hot_snapshot===!0&&he(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Nt(e.deadline))&&Pt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Zr(t){const e=q(t);return e!==null&&e.__frame_hot_start===!0&&he(e.gen)&&nt(e.from)}function Qr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ft(t){return q(t)!==null&&!Array.isArray(t)}function en(t){const e=q(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Qr(e.ver)&&(e.grant===void 0||Ft(e.grant))&&(e.budgets===void 0||Ft(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||he(e.brokerGen))}function tn(t){const e=q(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||he(e.brokerGen))}function Ge(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function jt(t){if(t==null||typeof t=="string")return!0;const e=q(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function rn(t){const e=q(t);return e!==null&&typeof e.path=="string"&&zr.includes(e.kind)&&jt(e.from)&&jt(e.to)}function nn(t){return t===null?null:Object.freeze(t.filter(rn))}function on(t){const e=q(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Ge(e.from)&&Ge(e.to)&&(e.changed===null||Array.isArray(e.changed))&&$r.includes(e.required)&&Nt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Wr.test(e.preflight))}function an(t){const e=q(t);return e!==null&&e.__frame_hot_readdress===!0&&Ge(e.from)&&Ge(e.to)}var pe=/^[\w.-]+\.js$/;function sn(t,e,r){return r?"inert":typeof e=="string"&&pe.test(e)?t?[e]:"inert":t?"inert":"framed"}var xt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function It(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=rt(e?.k),a=Le(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{qr(r,a)}catch{}let l=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const u=JSON.parse(s);Yr(u)&&(e===null||u.gen===e.g)&&(l=u)}catch{}if(l===null)try{r.removeItem(a)}catch{}return l}function Dt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var ln=/^[^/\\?#]{1,128}$/,ot=t=>ln.test(t)&&t!=="."&&t!=="..";function Ht(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!ot(r))return null;const s=n.search.slice(1).split("&").filter(l=>!/^__frame_t(?:=|$)/.test(l)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var $e="{}";function Oe(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Bt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function qt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function cn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,l=queueMicrotask,u=performance.now.bind(performance),O=new TextEncoder;let k=null,E=null;try{k=history,E=k.replaceState.bind(k)}catch{}const h=(...o)=>{try{console.warn(...o)}catch{}};let S=Dt(),L=null;try{L=sessionStorage}catch{}const p={storage:L,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:S,priors:[],key:n?.k};let F=n?.k;const R=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(u()),16);let _=e?.data??{},y=Oe(e?.from),j=e?.gen??0,I=e!==null,B=!1,G=!1,D=null,be=!1;const Fe=new AbortController;let je=null,U=null,Ee=null,xe=!1,le=()=>{};const ce=new Promise(o=>{le=o});let ve=!1,c=!1,g=!1,v,A=null,H=!1,X=!1,K=!1,te=!1,Y=!1,_e=!1;const ye=o=>{for(const f of[rt(o),Le(o)])try{L?.removeItem(f)}catch{}},$=(o,f)=>{try{f!==null&&r.post(o,f)}catch{}},Ie=()=>Y||=K&&(U===null||te),J=()=>{const o={__frame_hot:!0,ready:U!==null,accept:Ee!==null,demand:!0};_e=!Y,_e&&(o.booting=!0),ve&&(o.readData=!0),g&&(o.threw=!0),A?.assess&&(o.preflight=!0),$(o,D)};let De=!1,re=!1,ue=!1,He=!1;const Je=()=>{De||!be||ue||(De=!0,$({__frame_reveal_hold:!0},"*"))},Se=()=>new Promise(o=>{let f,d=0;const m=M=>{if(f===void 0)f=M;else if(M!==f||++d>=8){o();return}try{R(m)}catch{o()}};try{R(m)}catch{o()}}),Be=()=>{ue=!0,$({__frame_reveal_ready:!0},"*")},qe=o=>{re||(re=!0,o.then(f=>{if(f===!1)return;let d=null;try{d=A?.settle?.()??null}catch{}return(d===null?Se():new Promise(m=>{a(m,50),Promise.resolve(d).then(m,m)}).then(Se)).then(Be)}))},yt=()=>{if(He||!ue)return;He=!0;const o=()=>{try{A?.afterReveal?.()}catch{}};o(),Se().then(()=>{o(),Be()})},ee=(o=!1)=>{if(xe||U===null||!I||!G)return;xe=!0;const f=U,d=_;l(()=>{let m;try{m=f(d)}catch(P){throw le(!1),P}let M=!1;try{M=typeof m?.then=="function"}catch{}if(!M){le(!0);return}Promise.resolve(m).then(()=>le(!0),P=>{le(!1),l(()=>{throw P})})}),qe(o?ce:r.dcl.then(()=>ce))},fe=o=>typeof o=="string"&&Mt.test(o)?o:void 0,Ae=o=>{const f={__frame_hot_restart:!0},d=fe(o?.note);d!==void 0&&(f.note=d),o?.required==="hard-reload"&&(f.required="hard-reload"),$(f,D)},Ue=Object.freeze({get data(){return G||(c=!0),!I&&!ve&&(ve=!0,G&&J()),_},get from(){return y},get gen(){return j},signal:Fe.signal,snapshot(o){typeof o=="function"&&(je=o)},ready(o){typeof o!="function"||U!==null||(U=o,Je(),J(),B&&$({__frame_hot_ready:!0,gen:j},D),ee())},accept(o){typeof o=="function"&&(Ee=o,J())},restart(o){const f={note:o?.note,required:o?.required};if(G){Ae(f);return}const d=v;v={note:fe(d?.note)??f.note,required:d?.required==="hard-reload"||f.required==="hard-reload"?"hard-reload":void 0}}});let i=null,w=()=>{};const b=new Promise(o=>{w=o});let N=null;const Z=()=>N??=r.dcl.then(()=>{let o=!1;try{o=i!==null&&i.expect()}catch{}if(!o)return;const f=i.maxMs;return new Promise(d=>{b.then(d),a(d,f)})}),Q=()=>{if(!H||X||A===null)return;X=!0;const o=A;Z().then(()=>{try{ue||o.afterStart(qt(e),!1)}catch{}})},de=o=>{e!==null&&c&&(ve=!0),_={},y=null,j=0;try{L?.removeItem(Le(n?.k))}catch{}e!==null&&!o&&qe(r.dcl.then(()=>U!==null?ce:void 0))},Gn=()=>{H=!0,qe(Z().then(()=>U!==null?ce:void 0)),Q()};try{addEventListener("error",()=>{g||U!==null||(g=!0,J())})}catch{}const sr=()=>{a(()=>{!Y&&Ie()&&_e&&J()},0)};try{K=document.readyState==="complete",K||addEventListener("load",()=>{K=!0,sr()},{once:!0})}catch{K=!0}Ie(),ce.then(()=>{te=!0,sr()});let ge=-1,gt,wt,Ke=!0,bt=!1,Et,Ze=null;const St=o=>{const f=Ze===null;Ze=Ke&&o[0]!=="withheld"?o:["withheld",o[1],$e];let d=o[0];if(Ke&&d!=="withheld"){const M={ver:S,handoff:d};gt!==void 0&&(M.seq=gt),wt!==void 0&&(M.note=wt);try{if(L===null)throw new Error("no storage");L.setItem(rt(F),'{"kv":1,"gen":'+ge+',"from":'+JSON.stringify(M)+(Et!==void 0?',"k":'+JSON.stringify(Et):"")+',"data":'+(d==="ok"?o[2]:$e)+"}")}catch{d="unavailable"}}else{d="withheld",ye(F);try{A?.release?.()}catch{}}const m={__frame_hot_snapshotted:!0,gen:ge,handoff:d,bytes:o[1]};o[3]!==void 0&&(m.errName=o[3]),$(m,D),f&&(d==="snapshot_error"||d==="unclonable"||d==="oversize")&&h("claude.hot: snapshot",d,o[3])},ke=o=>{try{return xr(o?.name)}catch{return"other"}},Re=(o,f,d=0)=>St(f===void 0?[o,d,$e]:[o,d,$e,ke(f)]),$n=o=>{if(o.gen<=ge)return;const f=ge>=0;if(ge=o.gen,gt=o.seq,wt=fe(o.note),typeof o.key=="string"&&Ot.test(o.key)&&o.key!==F&&(ye(F),F=o.key),Ke&&=o.handoff!==!1,f){Ze!==null?St(Ze):bt&&$({__frame_hot_held:!0,gen:ge},D);return}Fe.abort();const d=Object.freeze({handoff:Ke,timeoutMs:o.timeoutMs,deadline:o.deadline??Ir}),m=je,M=()=>{if(Ke)try{Et=A?.capture()}catch{}if(m===null){Re("empty");return}let T=!1;const z=a(()=>{T||(T=!0,Re("snapshot_timeout"))},Math.max(0,d.timeoutMs));Promise.resolve().then(()=>m(d)).then(Te=>{if(T)return;T=!0,s(z);let ne;try{ne=JSON.stringify(Te)}catch(At){Re("unclonable",At);return}if(typeof ne!="string"){Re("unclonable");return}let oe=ne.length;try{oe=O.encode(ne).length}catch{}if(oe>262144){Re("oversize",void 0,oe);return}St(["ok",oe,ne])},Te=>{T||(T=!0,s(z),Re("snapshot_error",Te))})};let P=null;try{P=A?.holdForIme()??null}catch{}if(P===null)M();else{bt=!0,$({__frame_hot_held:!0,gen:ge},D);const T=()=>{bt=!1,M()};P.then(T,T)}},zn=o=>{if(!B||I||U===null||o.gen!==j)return;let f=null;try{f=It(L,n&&{k:n.k,g:o.gen})}catch{}if(f!==null&&f.gen!==o.gen){f=null;try{L?.removeItem(Le(n?.k))}catch{}}_=f?.data??{},y=Bt(Oe(f?.from??o.from),Oe(o.from)),f!==null&&(j=f.gen),I=!0,B=!1;const d=qt(f);ce.then(m=>{try{m&&A?.afterStart(d,!0)}catch{}}),ee(!0)},ir=o=>{const f=S,d=p.entry;let m="",M,P=null;try{if(m=location.href,M=k.state,P=Ht(m,f,o),P!==null)if(E(M,"",P),location.pathname.startsWith("/_f/"+o+"/"))P=location.href;else return{failed:"navigate event canceled"}}catch(T){return{failed:ke(T)}}S=p.ver=o,p.priors.push(f)>8&&p.priors.splice(1,1);try{p.entry=Ht(d,f,o)??d}catch{}return[P,f,d,m,M]},Vn=({from:o,to:f})=>{let d,m;if(!ot(f.ver))d="adopt_failed",m="not a version path segment";else if(f.ver===S)d="adopted";else if(!S||o.ver!==S)d="stale";else{const P=ir(f.ver);"failed"in P?(d="adopt_failed",m=P.failed):d=P[0]===null?"adopt_skipped":"adopted"}m!==void 0&&h(`claude.hot: could not move this page's URL to its new version folder /_f/${f.ver}/ (${m})`);const M={__frame_hot_readdressed:!0,to:f.ver,at:S,outcome:d};$(M,D)};let Qe=0;const Wn=o=>{const f=Ee;if(f===null||o.id<=Qe)return;Qe=o.id;const d=A?.assess;if(o.preflight===void 0||d===void 0){lr(o,f);return}let m=!1;const M=z=>{m||(m=!0,s(T),o.id===Qe&&lr(o,f,z))},P=()=>M(d.timeout(o)),T=a(P,Vr+100);d.run(o,window).then(M,P)},lr=(o,f,d)=>{let m,M=!1,P=!1,T,z,Te=null;const ne=C=>{if(P)return!1;if(T!==void 0&&T!==C)return h(`claude.hot: u.${C}() ignored - u.${T}() was called first`),!1;const ae=T===void 0;return T=C,ae},oe=C=>{T="restart",h(`claude.hot: ${C} - restarting`)},At=()=>{if(!ne("adopt")||o.id!==Qe)return;const C=o.to.ver;if(et.required!=="none"){oe(`u.adopt() needs required 'none', it is '${et.required}'`);return}if(!ot(C)){oe("u.adopt() cannot address this version");return}if(!S||C===S)return;const ae=ir(C);if("failed"in ae){z="adopt_failed",oe(`adopt_failed ${ae.failed}; URL not changed`);return}const[V,Rt,Jn,ur,Zn]=ae;V===null?(z="adopt_skipped",h(`claude.hot: adopt_skipped - page already left /_f/${Rt}/; URL not changed, update still applied`)):z="adopted",Te=()=>{if(S===C){if(V!==null)try{if(location.href!==V)h("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(E(Zn,"",ur),location.href!==ur){h("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",h("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(Qn){h(`claude.hot: adopt_revert_failed ${ke(Qn)} - URL still at the new version`);return}S=p.ver=Rt,p.entry=Jn,p.priors[p.priors.length-1]===Rt&&p.priors.pop(),V===null&&(z=void 0)}}},et=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:nn(o.changed),required:o.required,deadline:o.deadline,adopt:At,defer(){return ne("defer")&&et.deadline.now&&oe("u.defer() past the deadline"),xt},restart(C){return ne("restart"),T==="restart"&&!P&&(m??=fe(C?.note),M||=C?.required==="hard-reload"),xt},...d?.update}),Xn=(C,ae)=>{P=!0,C==="threw"?(Te?.(),m??=ke(ae).toLowerCase()):T===void 0&&h(C==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const V={__frame_hot_verdict:!0,id:o.id};V.verdict=C==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",V.verdict==="restart"&&(M&&(V.required="hard-reload"),m!==void 0&&(V.note=m)),z!==void 0&&(V.verdict==="applied"||z!=="adopted")&&(V.adopt=z),$(Object.assign(V,d?.verdict),D)};let cr=!1;const kt=(C,ae)=>cr?!1:(cr=!0,s(Yn),Xn(C,ae),!0),Yn=a(()=>kt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>f(et)).then(()=>kt("settled"),C=>{!kt("threw",C)&&T==="adopt"&&Ae({note:ke(C).toLowerCase()}),h("claude.hot: accept",ke(C))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Ue,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Ue,boot:p,afterConnect(){be=!0,(e!==null||U!==null)&&Je()},onInit(o,f){D=f,G=!0;const d=Ct(o)?o:null;d?.phase==="final"&&e!==null&&e.gen===d.gen?(I=!0,y=Bt(y,Oe(d.from)),Gn()):(B=d?.phase==="pending",de(B),I=!B,j=d?.gen??0,y=Oe(d?.from)),J(),_e&&a(()=>{Y||(Y=!0,J())},Gr),B&&U!==null&&$({__frame_hot_ready:!0,gen:j},f),v!==void 0&&(Ae(v),v=void 0),ee()},onNoInit(){G=!0,de(!1),I=!0,ee()},onShell(o){return o?.__frame_revealed===!0?(yt(),!1):Jr(o)?($n(o),!0):Zr(o)?(zn(o),!0):on(o)?(Wn(o),!0):an(o)?(Vn(o),!0):!1},attachExtras(o){A=o,Q(),o.assess&&J()},inSlot:()=>Le(F),hydration(o,f){i??={expect:o,maxMs:f}},hydrated(){w()},carried(){return I?_:{}},presented:()=>ue}}var no="frame_ldx_runtime",un="frame_ldx_build",oo="script#an-form",fn=256;function Ut(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=fn&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Me(t,e,r,n){try{const a=t[e];if(typeof a!="function")return;t[e]=function(...s){if(n){let u;try{u=n(this)}catch{}if(u!==void 0)return u}const l=a.apply(this,s);try{r?.(this)}catch{}return l}}catch{}}var at;function dn(){if(at)return at;const t={media:new Set,contexts:new Set,gate:null,onStart:null,onStop:null};at=t;const e=l=>t.gate?.(l),r=l=>{t.onStop?.(l)},n=window.HTMLMediaElement?.prototype;n&&(Me(n,"play",l=>{Ut(t.media,l,u=>u.paused),t.onStart?.(l)},e),Me(n,"pause",r));const a=window.AudioContext,s=window.AudioNode?.prototype;return a&&s&&(Me(s,"connect",l=>{const u=l.context;u instanceof a&&(Ut(t.contexts,u,O=>O.state==="closed"),t.onStart?.(u))}),Me(a.prototype,"resume",void 0,e),Me(a.prototype,"suspend",r)),t}function hn(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function pn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:hn(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let l=0;l<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));l++)s=s.parent},on(n){const a=s=>{const l=s.source;r(l)&&n(s.data,s.origin,s.isTrusted,()=>{t??=l})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const l=u=>{r(u.source)&&u.origin===n&&a(u.data,u)};return addEventListener("message",l,s),()=>removeEventListener("message",l,s)}})}}function mn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var vn=500,_n=2e4,yn="data-token-reads",gn="data-frame-refused-watch",wn="data-frame-unsupported",bn=/(?:^|\s)stylesheet(?:\s|$)/i;function En(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&bn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function Sn(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(gn,"");const a=location.href,s=fetch,l=setTimeout,u={method:"HEAD",cache:"no-store",credentials:"same-origin"},O=p=>p.ok||p.status===304;let k=!1,E=!1;const h=()=>removeEventListener("error",L,!0),S=async p=>{const F=await s(p,u);if(O(F))E=!0;else if(F.status===403){const R=await s(a,u);if(O(R)){const _=(await s(p,u)).status;_===403?(E=!0,document.documentElement.setAttribute(wn,""),r()):_<500&&(E=!0)}else R.status>=400&&R.status<500&&(E=!0)}},L=p=>{if(E||k)return;if(document.documentElement.hasAttribute(yn)){E=!0,h();return}const F=En(p.target,n);F&&(k=!0,l(()=>{S(F).catch(()=>{}).finally(()=>{k=!1,E&&h()})},vn))};addEventListener("error",L,!0),addEventListener("load",h,{once:!0}),l(h,_n)}var st="__frame_scroll",An=150,kn=310,Rn=160,Tn=3e4,Kt="p,h1,h2,h3,h4,h5,h6,li,pre,blockquote,tr,dt,dd,figcaption,summary",Gt=()=>innerWidth<=kn&&innerHeight<=Rn,$t=t=>{const e=document.createTreeWalker(t,NodeFilter.SHOW_TEXT);let r="";for(;r.length<600&&e.nextNode();)r+=e.currentNode.nodeValue.slice(0,600-r.length);const n=r.replace(/\s+/g," ").trim().slice(0,120);let a=2166136261;for(let s=0;s<n.length;s++)a=Math.imul(a^n.charCodeAt(s),16777619);return n.length>11?a>>>0||1:0},zt=t=>{for(let e=t;e&&e!==document.scrollingElement;e=e.parentElement){const r=getComputedStyle(e).position;if(r==="fixed"||r==="sticky"||e!==t&&e.scrollTop)return!1}return!0},Ln=()=>{const t=[],e=[];try{for(let r=0;r<16;r++){const n=document.elementFromPoint(innerWidth/(r%2?4:2),innerHeight*(r>>1)/8+1);let a=n?.closest(Kt)??n;for(;a&&!a.matches(Kt)&&![...a.childNodes].some(l=>l.nodeType===3&&l.nodeValue?.trim());)a=a.parentElement;const s=a&&!e.includes(a)?$t(a):0;s&&!t.some(l=>l[0]===s&&l[2]===a.tagName)&&zt(a)&&(e.push(a),t.push([s,Math.round(a.getBoundingClientRect().top),a.tagName]))}}catch{}return t.sort((r,n)=>+(r[1]<0)-+(n[1]<0)),t.length?t.slice(0,3):void 0},On=t=>{try{for(const[e,r,n]of t.a??[]){const a=document.getElementsByTagName(n);let s;for(let u=0;u<a.length&&a.length<5e3;u++)$t(a[u])===e&&(s=s===void 0||s?.contains(a[u])?a[u]:null);const l=s?.getBoundingClientRect();if(l?.height&&s.checkVisibility?.()!==!1&&zt(s)&&isFinite(r))return Math.max(0,Math.round(scrollY+l.top-r))}}catch{}return t.y};function Mn(){let t=0,e=!1,r=!1,n=!1,a={y:0},s=null;const l=y=>{try{sessionStorage.setItem(st,JSON.stringify(y))}catch{}},u=y=>{if(clearTimeout(t),s===null)return;const j=s;s=null,l({y:j,a:y&&j>0?Ln():void 0})},O=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(u,An,!0)};try{addEventListener("scroll",O,{passive:!0}),addEventListener("pagehide",()=>u())}catch{}const k=()=>{let y;try{y=sessionStorage.getItem(st)}catch{return null}if(y===null)return null;let j;try{j=JSON.parse(y)}catch{j=null}const{y:I,a:B}=j??{};if(!(typeof I=="number"&&Number.isFinite(I)&&I>=0)){try{sessionStorage.removeItem(st)}catch{}return null}const G=D=>Array.isArray(D)&&typeof D[0]=="number"&&Number.isFinite(D[1])&&typeof D[2]=="string";return{y:I,a:Array.isArray(B)&&B.length<4&&B.every(G)?B:void 0}};let E=!1,h=-1;const S=y=>{try{const j=scrollY,I=On(y);scrollTo({top:I,left:0,behavior:"instant"}),a=Gt()?y:{y:I,a:y.a},n=!0,clearTimeout(t),s=null,l(a),h=scrollY,h!==j&&(e=!0);const B=I!==y.y&&document.readyState!=="complete";(h!==I||B)&&!E&&(E=!0,addEventListener("load",()=>{try{scrollY===h&&S(k()??a)}catch{}},{once:!0}))}catch{}},L=()=>{try{return!!location.hash}catch{return!0}};let p=!1;const F=()=>{try{if(p||!Gt())return;p=!0;const y=Date.now(),j=()=>{try{removeEventListener("resize",j)}catch{}Date.now()-y>Tn||r||L()||S(k()??a)};addEventListener("resize",j)}catch{}};let R=!1,_=!1;return{restore(){if(R||(R=!0,L()))return;const y=k();y!==null&&(S(y),F())},promoted(){if(_||(_=!0,L()))return;const y=k();y!==null?(S(y),F()):n&&S(a)}}}function Pn(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:O=>O})??null}catch{}const s=window.Worker,l=s?.prototype,u=Object.freeze({Worker:s,workerOn:l?.addEventListener,workerPost:l?.postMessage,workerTerminate:l?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(O=>O?.bootTopLevel?O.bootTopLevel(u,n):n.settle()).catch(()=>n.settle())}var ao="modulepreload",so=function(t){return"/"+t},io={},Nn=function(e,r,n){let a=Promise.resolve();function s(l){const u=new Event("vite:preloadError",{cancelable:!0});if(u.payload=l,window.dispatchEvent(u),!u.defaultPrevented)throw l}return a.then(l=>{for(const u of l||[])u.status==="rejected"&&s(u.reason);return e().catch(s)})},Cn=window===top,Vt=Object.getOwnPropertyDescriptor(window,"claude"),ze=sn(Cn,window.__FRAME_PREAMBLE?.topLevel,Vt?.writable===!1),it=typeof ze=="object"&&ze[0],x=it?mn():pn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&ze==="framed")try{x.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Wt=1e4,Fn=2e3,lt=2e3,ct=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Xt(t){for(const e of ct)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Pe=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ne=window.__FRAME_PREAMBLE?.transforms,ut=window.__FRAME_PREAMBLE?.comments,ft=window.__FRAME_PREAMBLE?.translate,me=window.__FRAME_PREAMBLE?.ldx,Ve=fr(window.__FRAME_PREAMBLE?.cred),Yt=(()=>{try{const[t]=performance.getEntriesByType("navigation"),e=t?.serverTiming?.find(r=>r.name==="frame-cred-exp");return e!==void 0&&/^\d{1,15}$/.test(e.description)?dr(Number(e.description)):void 0}catch{return}})();function Jt(t){return Nn(()=>import("/_runtime/"+t),void 0)}var Ce=new Set,Zt=setTimeout,jn=fetch,xn=AbortController,In=800+800*Math.random(),Dn=3e3,We=null,Qt=new Map;function Hn(t,e){let r=Qt.get(t);return r||Qt.set(t,r=Bn(t,e)),r}function Bn(t,e){if(We?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new xn;let n=!1;return Zt(()=>{n=!0,r.abort()},Dn),jn("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":We?.has(t)?"csp":"net")}function se(t){if(!We){const e=We=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Jt(t).catch(()=>new Promise(e=>Zt(e,In)).then(()=>Jt(t+"?r=1")).then(e=>(e!==void 0&&Ce.add(t),e)))}function er(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:_t,hooks:Xe,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(l){return Promise.reject(l)}}})}}var we=null,W=null;function tr(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var dt=!1,Xe={editBefore:null,edit:null};function qn(t,e,r=!1){const n=[];let a;if(r)try{Xe.editBefore?.(t)}catch{}for(const s of t.elements){const l=document.querySelector(`[data-id="${s.target}"]`);if(!l){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(u=>!_r(u)||yr(l,u))){a=s.target;break}if(s.text!==void 0&&(!Er(l)||Rr(l))){a=s.target;break}for(const[u,O]of Object.entries(s.attrsSet??{}))if(!nr(l,u)){try{l.setAttribute(u,O)}catch{}rr(l,u,O)}for(const u of s.attrsRemoved??[])nr(l,u)||(l.removeAttribute(u),rr(l,u,null));typeof s.text=="string"&&Ar(l,s.text),n.push(s.target)}if(r)try{Xe.edit?.(t.seq,n,a)}catch{}if(a!==void 0){x.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function rr(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function nr(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function or(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,dt=!0):dt&&(delete e.dataset.theme,e.style.colorScheme="",dt=!1)}var ie=new Map,ht=null;function pt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function Ye(t,e){t.nulled=!0,t.ver=e,t.r(null)}function mt(t,e){for(const[r,n]of ie)n.done||(e&&n.asked?e(r,n):Ye(n,t))}function Un(){for(const t of ie.values())if(t.asked&&!t.done)return!0;return!1}var Kn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),vt=!1,_t=(t,e)=>{let r=ie.get(t);if(r?.nulled&&vt)r=pt(),ie.set(t,r);else if(!r||r.done){r?.nulled&&W&&x.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},W);return}const n=typeof e=="function"?Object.setPrototypeOf(e,Kn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function ar(){const t=Vt?.value??{};tr(window,"claude",t);for(const e of Object.keys(Pe)){if(t[e]!==void 0){tr(t,e,t[e]);continue}ie.set(e,pt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Pe,r))return Promise.resolve(null);let n=ie.get(r);return n?(ht&&(n.nulled||n.want!==void 0)&&(n=ht(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(ze==="framed"){let t;const e=Ne&&pe.test(Ne)?se(Ne).catch(c=>{t={f:Ne,e:c}}):Promise.resolve(void 0),r=c=>{if(c.type==="auxclick"&&c.button!==1)return;const g=c.target,v=g&&g.closest?g.closest("a[href],area[href]"):null;if(!v)return;const A=v.getAttribute("href");if(!A)return;let H;try{H=new URL(A,document.baseURI)}catch{return}if((H.protocol==="http:"||H.protocol==="https:")&&H.origin!==location.origin){c.preventDefault();const X=(v.getAttribute("target")??"").toLowerCase(),K=c.type==="auxclick"||c.metaKey||c.ctrlKey||c.shiftKey||c.altKey||!["","_self","_top","_parent"].includes(X);x.post({__frame_nav:!0,url:H.href,newTab:K},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=c=>{c.isTrusted&&(n.pointer=!0)},s=c=>{c.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const l={cb:null};addEventListener("keydown",c=>l.cb?.(c),!0);const u={cb:null};addEventListener("keydown",c=>u.cb?.(c));const O=dn();e.then(c=>c?.installEscapeForward?.(l,g=>{W&&x.post(g,W)})),e.then(c=>{try{c?.installFocusKeep?.()}catch{}}),e.then(c=>{if(!c?.wireNav)return;const g=x.port("*");c.wireNav(g),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),c.wireEngagement?.(n,g,O)});let k=null;try{k=Mn()}catch{}const E=document.readyState==="loading"?new Promise(c=>document.addEventListener("DOMContentLoaded",()=>c(),{once:!0})):Promise.resolve();let h="dcl",S=!1;E.then(()=>{S=!0});let L=null,p=null;try{p=Ur(window.name),L=It(null,p)}catch{}const F=ar();let R=null;try{R=cn(F,L,{post:(c,g)=>x.post(c,g),dcl:E},p)}catch{}e.then(c=>{try{R&&c?.installHotExtras?.(R)}catch{}});let _=null;const y=()=>Array.isArray(_?.flags)&&_.flags.includes("frame_ldx_runtime")&&!!me&&pe.test(me)&&document.querySelector("script#an-form")!==null;try{R?.hydration(y,Kr)}catch{}let j=null,I=0;const B=x.on((c,g,v,A)=>{Xt(g)&&Mr(c)&&(A(),_=c.__frame_init,W=g,B(),clearTimeout(I),j?.())});if(Ve){const c=Yt===void 0?{__frame_cred:Ve}:{__frame_cred:Ve,exp:Yt};for(const g of ct)try{g.endsWith(":*")||x.post(c,g)}catch{}}x.post({__frame_connect:!0},"*");try{R?.afterConnect()}catch{}const G=setTimeout,D=clearTimeout;let be=()=>NaN,Fe=()=>[];try{be=performance.now.bind(performance),Fe=performance.getEntriesByType.bind(performance)}catch{}let je=0;const U=()=>{try{x.post({__frame_alive:!0},"*")}catch{}je=G(U,Fn)},Ee=()=>D(je);U(),addEventListener("load",Ee,{once:!0});const xe=new Promise(c=>{j=c,I=setTimeout(()=>{B(),c()},Wt)}),le=new WeakSet;addEventListener("error",c=>{c.target&&le.add(c.target)},!0);try{Sn(Dt(),Ve,()=>{e.then(c=>{try{c?.drawRefusedNotice?.()}catch{}})})}catch{}const ce=()=>{let c=[];try{c=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(v=>!v.sheet&&!v.disabled&&!le.has(v)&&v.getAttribute("href")&&URL.canParse(v.href)&&(!v.media||matchMedia(v.media).matches))}catch{}let g=c.length;return g===0?Promise.resolve():new Promise(v=>{try{const A=lt-be();A>0&&(h="sheets");const H=G(v,A>0?A<lt?A:lt:0),X=()=>{--g===0&&(D(H),v())};for(const K of c)K.addEventListener("load",X,{once:!0}),K.addEventListener("error",X,{once:!0})}catch{v()}})};E.then(()=>{try{k?.restore()}catch{}}),Promise.all([xe,E,e]).then(([,,c])=>{if(_?.hostOverlays!==!0||!W)return;let g=!1;try{g=c?.declaresCover?.()===!0}catch{}x.post({__frame_layout:{cover:g}},W)});const ve={cb:null};x.on((c,g)=>{if(Xt(g)&&Pr(c)){try{k?.promoted()}catch{}ve.cb?.()}}),xe.then(async()=>{if(!_||!W){mt();try{R?.onNoInit()}catch{}return}if(or(_.theme),_.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,O)),_.hostKeys!==void 0){const i=W,w=_.hostKeys;e.then(b=>b?.installHostKeyForward?.(u,w,N=>x.post(N,i)))}try{R?.onInit(_.hot,W)}catch{}let c;const g=()=>{try{!c&&me&&y()&&(c=se(me),c.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};g(),E.then(g);const v=W,A=x.port(v),H=(i,w)=>x.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:w}},v),X=(i,w,b)=>{new Promise(N=>N(Hn(w,b))).then(N=>H(i,N),()=>H(i))},K=i=>x.post({__frame_cap_recovered:{cap:i}},v);let te=_.brokerGen;const Y=()=>R?.boot.ver??"",_e=Y(),ye=(i,w)=>{const b=Y();D(w.t),w.want=b,w.t=G(()=>{w.done||Ye(w,b)},Wt),x.post({__frame_cap_want:!0,cap:i,ver:b},v)},$=(i,w)=>{const b=ie.get(i.cap),N=Pe[i.cap];if(!w||!b||b.done||b.want!==i.ver||!pe.test(N))return;if(D(b.t),b.want=void 0,te=i.brokerGen??te,i.ver!==Y()){ye(i.cap,b);return}if(!i.grant||i.cap==="network"){Ye(b,i.ver);return}const Z=we,Q=we={...Z,capabilities:{...Z.capabilities,[i.cap]:i.grant},capBudgets:{...Z.capBudgets,[i.cap]:{...Z.capBudgets[i.cap],...i.budgets}}};se(N).then(de=>{Ce.has(N)&&K(i.cap),Q.brokerGen=te,vt=!0;try{de?.install?.(Q)}catch{H(i.cap,"install")}finally{vt=!1}},de=>X(i.cap,N,de)).then(()=>{b.done||Ye(b,i.ver)})};let Ie=!1,J=!1;x.on((i,w,b)=>{if(w!==v)return;try{if(R?.onShell(i))return}catch{}if(Cr(i)&&or(i.__frame_theme.theme),en(i)&&$(i,b),b&&tn(i)&&(te=i.brokerGen??te),Nr(i)){const Q=i.__frame_host_visible.visible;e.then(de=>de?.applyHostVisible?.(Q,O))}Or(i)&&qn(i.__frame_patch,v,b);const N=i?.__fc_mode;N&&typeof N=="object"&&!Ie&&ut&&pe.test(ut)&&(Ie=!0,se(ut).then(Q=>Q.install?.(v,N.on===!0,A)).catch(()=>{}));const Z=i?.__ft_cmd;Z&&typeof Z=="object"&&!J&&ft&&pe.test(ft)&&(J=!0,se(ft).then(Q=>Q.install?.(v,Z,A)).catch(()=>{}))});const De=Object.keys(_.capabilities??{}).filter(i=>Object.hasOwn(Pe,i)).map(i=>[i,Pe[i]]).filter(i=>typeof i[1]=="string"&&pe.test(i[1])),re=v;let ue=!1,He=()=>{};const Je=new Promise(i=>{He=()=>{ue=!0,i()}}),Se=()=>(ue||(h="caps"),Je),Be=L!==null||Ct(_.hot)||_.hostVisible===!1||_.hostOverlays===!0;S&&(h="init");const qe=E.then(()=>Be?Se():new Promise(i=>G(i,0))).then(ce).then(()=>{let i=!0;try{i=Be||Un()}catch{}return i?Se():void 0}).then(()=>{Ee();const i=hr(Fe,be);x.post(i?{__frame_ready:!0,nav:i,gate:h}:{__frame_ready:!0,gate:h},re),e.then(w=>{w?.installSizeReporter?.(re,ve,A),w?.installPaintReporter?.(A)})}),yt=await Promise.allSettled(De.map(([,i])=>se(i))),ee=await e;if(ee?.buildBoot||(t?X("_transforms",t.f,t.e):H("_transforms")),ee?.buildBoot)try{we=ee.buildBoot(_,ee.TRANSFORMS??{},{shellOrigin:re,mount:_t,hooks:Xe,shell:A},i=>x.post({__frame_cap_telemetry:i},re))}catch{H("_transforms","install"),we=er(_,re,A)}else we=er(_,re,A);ee?.buildBoot&&Ce.has(Ne??"")&&K("_transforms");const fe=we;fe.brokerGen=te,yt.forEach((i,w)=>{const[b,N]=De[w];if(i.status!=="fulfilled"){X(b,N,i.reason);return}Ce.has(N)&&K(b);try{i.value?.install?.(fe)}catch{H(b,"install")}});const Ae=_.capWants===!0;Ae&&(ht=(i,w)=>{const b=Y();if(!b)return w;if(!w.nulled)return w.want!==b&&ye(i,w),w;if(b===w.ver)return w;const N=pt();return ie.set(i,N),ye(i,N),N}),mt(_e,Ae&&Y()!==_e?ye:void 0),He(),await qe;let Ue=!1;try{Ue=y()}catch{}me&&Ue?(c??se(me)).then(i=>i?.boot?.({shellOrigin:v,build:fe.flags.has(un),hot:R?.hot??null,carried:R?.carried(),presented:()=>R?.presented()??!0})).catch(()=>!1).then(i=>{R?.hydrated(),i!==!0?H("_ldx"):Ce.has(me)&&K("_ldx")}):R?.hydrated()})}else it&&(ar(),Pn(it,ct,se,{settle:mt,mount:_t}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>HTTP on the Wire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./css2">
+<style>
+/* Layout: long-form explainer, 66ch prose column, wider "capture window" figures with play/scrub controls */
+:root{
+  --bg:#F2F4F6; --surface:#FFFFFF; --sunk:#E8ECF0; --ink:#13202B; --muted:#56636F; --rule:#D3DAE1;
+  --accent:#1F4FD1; --on-color:#FFFFFF;
+  --p1:#9C4F0E; --p2:#0D7680; --p3:#6B36BD;
+  --c1:#3466D4; --c2:#C97D06; --c3:#23905F; --c4:#C93C5B; --c5:#7F55CC;
+  --loss:#CF3127; --ok:#1E8550;
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --body:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1217; --surface:#141B22; --sunk:#1B242D; --ink:#E2E8EE; --muted:#8F9CA8; --rule:#2A3540;
+  --accent:#86A8FF; --on-color:#0D1217;
+  --p1:#E59C58; --p2:#52C3CB; --p3:#B693F3;
+  --c1:#729BF2; --c2:#F0B445; --c3:#52C393; --c4:#EF7290; --c5:#B18EF2;
+  --loss:#F2645C; --ok:#5CCB8E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1217; --surface:#141B22; --sunk:#1B242D; --ink:#E2E8EE; --muted:#8F9CA8; --rule:#2A3540;
+  --accent:#86A8FF; --on-color:#0D1217;
+  --p1:#E59C58; --p2:#52C3CB; --p3:#B693F3;
+  --c1:#729BF2; --c2:#F0B445; --c3:#52C393; --c4:#EF7290; --c5:#B18EF2;
+  --loss:#F2645C; --ok:#5CCB8E; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font:17px/1.62 var(--body)}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:44px 88px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance}
+h1{font-stretch:120%;font-weight:850;font-size:clamp(42px,7.4vw,80px);line-height:.96;letter-spacing:-.025em;margin:14px 0 18px}
+h2{font-stretch:112%;font-weight:760;font-size:clamp(26px,3.4vw,36px);line-height:1.08;letter-spacing:-.01em;margin:0 0 14px}
+p{margin:0 0 14px}
+.prose{max-width:66ch}
+.lede{font-size:clamp(18px,2vw,21px);line-height:1.5;max-width:60ch}
+.eyebrow{font:600 12px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+code,.mono{font-family:var(--mono);font-size:.86em}
+a{color:var(--accent)}
+section{padding-block:56px 8px;border-top:1px solid var(--rule);margin-top:56px}
+.sec-no{font:600 12px var(--mono);letter-spacing:.1em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:8px}
+
+.tag{display:inline-block;font:700 11px/1 var(--mono);letter-spacing:.04em;padding:5px 7px;border-radius:4px;border:1.5px solid currentColor;white-space:nowrap}
+.tag.h1v{color:var(--p1)} .tag.h2v{color:var(--p2)} .tag.h3v{color:var(--p3)}
+
+nav.toc{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font:500 13px var(--mono)}
+nav.toc a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+nav.toc a:hover{color:var(--ink);border-color:var(--ink)}
+
+/* timeline */
+.timeline{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0;border-top:2px solid var(--ink)}
+.timeline li{padding:10px 12px 0 0;position:relative;min-width:0}
+.timeline li::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+.timeline li.major::before{background:var(--ink)}
+.timeline b{display:block;font:700 15px var(--mono);font-variant-numeric:tabular-nums;margin-top:6px}
+.timeline span{font-size:14px;color:var(--muted);line-height:1.35;display:block}
+
+/* three wires */
+.wires{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+@media (max-width:900px){.wires{grid-template-columns:1fr}}
+.wire{background:var(--surface);border:1px solid var(--rule);border-radius:10px;display:flex;flex-direction:column;min-width:0}
+.wire-h{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--rule)}
+.wire-h small{font:500 12px var(--mono);color:var(--muted)}
+.bytes{padding:12px 14px;font:13px/1.55 var(--mono);display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 14px;flex:1;overflow-x:auto}
+.bytes .b{color:var(--ink);font-weight:500;white-space:nowrap}
+.bytes .m{color:var(--muted);white-space:nowrap}
+.bytes .sep{grid-column:1/-1;border-top:1px dashed var(--rule);margin:4px 0}
+.text1{padding:12px 14px;font:13px/1.7 var(--mono);white-space:pre;overflow-x:auto;flex:1;margin:0;color:var(--ink)}
+.text1 .crlf{color:var(--p1);font-weight:700}
+.stack{display:flex;gap:4px;padding:10px 14px 14px;flex-wrap:wrap;border-top:1px solid var(--rule)}
+.stack span{font:600 11px var(--mono);padding:4px 7px;border-radius:4px;background:var(--sunk);color:var(--muted)}
+.stack span.hot{background:var(--ink);color:var(--bg)}
+
+/* figure shell */
+.fig{margin:28px 0 0;background:var(--surface);border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.fig-head{display:flex;gap:6px 14px;align-items:baseline;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--rule)}
+.fig-no{font:700 12px var(--mono);color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+.fig-head h3{font-size:17px;font-weight:680;font-stretch:105%;margin:0}
+.fig-body{padding:18px}
+.ctrl{display:flex;gap:14px;align-items:center;padding:12px 18px;border-top:1px solid var(--rule);background:var(--sunk)}
+.ctrl input[type=range]{flex:1;min-width:0;accent-color:var(--accent)}
+.btn{font:700 13px var(--mono);background:var(--ink);color:var(--bg);border:0;border-radius:6px;padding:9px 14px;cursor:pointer;min-width:88px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--rule)}
+.btn[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+output{font:500 13px var(--mono);color:var(--muted);min-width:15ch;text-align:right;font-variant-numeric:tabular-nums}
+figcaption{padding:12px 18px 16px;font-size:15px;line-height:1.5;color:var(--muted);border-top:1px solid var(--rule)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scroll svg{min-width:720px}
+svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font:500 12px var(--mono);color:var(--muted);margin-bottom:12px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.legend i.dash{height:0;border-top:2px dashed var(--muted);border-radius:0;vertical-align:3px}
+.legend i.hs{background:var(--rule)}
+
+/* svg typography + paints */
+.t-lab{font:500 11px var(--mono);fill:var(--muted)}
+.t-small{font:500 10px var(--mono);fill:var(--muted)}
+.t-strong{font:700 12px var(--mono);fill:var(--ink)}
+.t-title{font:700 14px var(--display);font-stretch:108%;fill:var(--ink)}
+.t-msg{font:600 10px var(--mono);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.t-chip{font:700 11px var(--mono);fill:var(--on-color)}
+.halo{paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.lane{stroke:var(--rule);stroke-width:2}
+.k-tcp{stroke:var(--muted);fill:var(--muted)} .k-tls{stroke:var(--accent);fill:var(--accent)} .k-http{stroke:var(--ink);fill:var(--ink)}
+.f-sunk{fill:var(--sunk)} .f-rule{fill:var(--rule)} .f-surface{fill:var(--surface)}
+.f-c1{fill:var(--c1)} .f-c2{fill:var(--c2)} .f-c3{fill:var(--c3)} .f-c4{fill:var(--c4)} .f-c5{fill:var(--c5)}
+.f-p1{fill:var(--p1)} .f-p2{fill:var(--p2)} .f-p3{fill:var(--p3)}
+.f-loss{fill:var(--loss)} .s-loss{stroke:var(--loss)} .f-ok{fill:var(--ok)}
+.box{fill:var(--surface);stroke:var(--rule);stroke-width:1.5}
+.box-sunk{fill:var(--sunk);stroke:var(--rule);stroke-width:1}
+.playhead{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:3 3}
+.wait{stroke:var(--muted);stroke-width:1.5;stroke-dasharray:2 3}
+.ghost{fill:none;stroke:var(--loss);stroke-width:1.5;stroke-dasharray:3 3}
+.retx-outline{fill:none;stroke:var(--ink);stroke-width:2;stroke-dasharray:4 2}
+
+/* handshake ladders */
+.ladders{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.ladder{border:1px solid var(--rule);border-radius:8px;padding:12px 10px 10px;min-width:0;background:var(--surface)}
+.ladder-h strong{display:block;font:700 15px var(--display);font-stretch:108%}
+.ladder-h span{font:500 12px var(--mono);color:var(--muted)}
+.ladder-f{font:500 13px var(--mono);color:var(--muted);border-top:1px solid var(--rule);padding-top:8px;margin-top:4px;transition:color .3s}
+.ladder-f b{font-size:18px;color:var(--ink);font-variant-numeric:tabular-nums}
+.ladder-f.reached{color:var(--ink)}
+.ladder-legend{margin-top:14px;margin-bottom:0}
+
+/* stats row */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+@media (max-width:640px){.stats{grid-template-columns:1fr}}
+.stat{border-top:3px solid var(--rule);padding-top:8px;min-width:0}
+.stat.h1v{border-color:var(--p1)} .stat.h2v{border-color:var(--p2)} .stat.h3v{border-color:var(--p3)}
+.stat b{display:block;font:800 28px var(--display);font-stretch:110%;font-variant-numeric:tabular-nums}
+.stat span{font:500 12px var(--mono);color:var(--muted)}
+
+/* hpack */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.hp-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px}
+@media (max-width:860px){.hp-grid{grid-template-columns:1fr}}
+.hp-table{width:100%;border-collapse:collapse;font:12.5px/1.4 var(--mono)}
+.hp-table th{text-align:left;font-weight:600;color:var(--muted);border-bottom:1px solid var(--rule);padding:6px 6px}
+.hp-table td{border-bottom:1px solid var(--rule);padding:6px 6px;vertical-align:top}
+.hp-table td.v{max-width:0;width:44%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
+.hp-table td.n{white-space:nowrap}
+.hp-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hp-table tfoot td{font-weight:700;border-bottom:0}
+.enc{display:inline-block;padding:2px 6px;border-radius:4px;font-weight:600;white-space:nowrap}
+.enc.static{background:var(--sunk);color:var(--muted)}
+.enc.dynamic{background:var(--ok);color:var(--on-color)}
+.enc.literal{border:1.5px solid var(--c2);color:var(--ink)}
+.flash{animation:flash .9s ease-out both}
+@keyframes flash{0%{transform:translateX(-6px);opacity:.35}100%{transform:none;opacity:1}}
+.dyn{font:12px/1.45 var(--mono);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;background:var(--sunk)}
+.dyn h4{font:700 13px var(--display);margin:0 0 6px}
+.dyn ol{list-style:none;margin:0;padding:0}
+.dyn li{display:grid;grid-template-columns:3ch minmax(0,1fr);gap:8px;padding:3px 0;border-bottom:1px dashed var(--rule)}
+.dyn li span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
+.dyn li b{color:var(--ok)}
+.dyn li.new span:last-child{color:var(--ink)}
+.bars{display:flex;gap:18px;align-items:flex-end;height:150px;margin-top:16px;padding:0 4px;border-bottom:1.5px solid var(--ink)}
+.bargroup{flex:1;display:flex;gap:6px;align-items:flex-end;height:100%;position:relative;opacity:.45;transition:opacity .3s}
+.bargroup.on{opacity:1}
+.bar{flex:1;position:relative;border-radius:3px 3px 0 0;transition:height .6s cubic-bezier(.2,.8,.2,1)}
+.bar.h1b{background:var(--p1)} .bar.h2b{background:var(--p2)}
+.bar em{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font:600 11px var(--mono);font-style:normal;color:var(--ink);padding-bottom:2px;white-space:nowrap}
+.barlabels{display:flex;gap:18px;padding:6px 4px 0;font:500 11px var(--mono);color:var(--muted)}
+.barlabels span{flex:1;text-align:center}
+
+/* comparison */
+.tbl-wrap{overflow-x:auto;margin-top:20px;border:1px solid var(--rule);border-radius:10px;background:var(--surface)}
+table.cmp{border-collapse:collapse;width:100%;min-width:680px;font-size:15px}
+.cmp th,.cmp td{padding:10px 14px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+.cmp thead th{font:700 13px var(--mono);border-bottom:2px solid var(--ink)}
+.cmp tbody th{font:600 13px var(--mono);color:var(--muted);white-space:nowrap}
+.cmp tr:last-child td,.cmp tr:last-child th{border-bottom:0}
+.cmp .good{color:var(--ok);font-weight:600}
+
+.steps{counter-reset:s;list-style:none;padding:0;margin:18px 0 0;display:grid;gap:14px;max-width:72ch}
+.steps li{counter-increment:s;display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px}
+.steps li::before{content:counter(s);font:800 18px var(--display);width:32px;height:32px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center}
+.steps pre{font:12.5px/1.5 var(--mono);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;overflow-x:auto;margin:6px 0 0}
+.practice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 32px;margin-top:20px}
+@media (max-width:760px){.practice{grid-template-columns:1fr}}
+.practice div{min-width:0}
+.practice h3{font-size:17px;font-weight:700;margin:0 0 6px}
+.practice p{font-size:16px;color:var(--ink)}
+footer{margin-top:64px;font:500 12px/1.6 var(--mono);color:var(--muted);border-top:1px solid var(--rule);padding-top:16px}
+@media (prefers-reduced-motion: reduce){.flash{animation:none}.bar,.bargroup{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">HTTP/1.1 → HTTP/2 → HTTP/3</div>
+    <h1>HTTP on the Wire</h1>
+    <p class="lede">All three versions use the same methods, headers and status codes. What changed is how those messages travel: as text on a connection of their own, then as binary frames sharing one TCP connection, then as independent streams on QUIC over UDP.</p>
+    <nav class="toc" aria-label="Sections">
+      <a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#wire">Same request</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#handshake">Handshakes</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#multiplex">Multiplexing</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#hol">Packet loss</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#headers">Headers</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#migration">Changing networks</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#discovery">Version choice</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#compare">Side by side</a><a href="https://8a4d9a7e-dca6-40d1-82b7-9d7eb0ba1e54.frame.claudeusercontent.com/_f/1791296775-ae04/#practice">In practice</a>
+    </nav>
+    <ol class="timeline" aria-label="Timeline">
+      <li><b>1997</b><span>HTTP/1.1, RFC 2068</span></li>
+      <li><b>2009</b><span>Google starts SPDY</span></li>
+      <li><b>2013</b><span>Google announces QUIC</span></li>
+      <li class="major"><b>2015</b><span>HTTP/2, RFC 7540</span></li>
+      <li><b>2021</b><span>QUIC, RFC 9000</span></li>
+      <li class="major"><b>2022</b><span>HTTP/3, RFC 9114; shared semantics, RFC 9110</span></li>
+    </ol>
+  </header>
+
+  <section id="wire">
+    <span class="sec-no">The core idea</span>
+    <h2>One request, three encodings</h2>
+    <div class="prose">
+      <p>Here is the same request, <code>GET https://shop.example.com/cart</code>, as each version puts it on the wire before encryption. Your application sees identical headers in all three. Everything this page covers comes from the differences in how the bytes are framed and carried.</p>
+    </div>
+    <div class="wires">
+      <article class="wire">
+        <div class="wire-h"><span class="tag h1v">HTTP/1.1</span><small>text, 1 at a time</small></div>
+<pre class="text1">GET /cart HTTP/1.1<span class="crlf">␍␊</span>
+Host: shop.example.com<span class="crlf">␍␊</span>
+Accept: text/html<span class="crlf">␍␊</span>
+<span class="crlf">␍␊</span></pre>
+        <div class="stack"><span class="hot">HTTP/1.1</span><span>TLS</span><span>TCP</span><span>IP</span></div>
+      </article>
+      <article class="wire">
+        <div class="wire-h"><span class="tag h2v">HTTP/2</span><small>binary frame, stream 1</small></div>
+        <div class="bytes">
+          <span class="b">00 00 1f</span><span class="m">length 31</span>
+          <span class="b">01</span><span class="m">type HEADERS</span>
+          <span class="b">05</span><span class="m">END_STREAM | END_HEADERS</span>
+          <span class="b">00 00 00 01</span><span class="m">stream id 1</span>
+          <span class="sep"></span>
+          <span class="b">82</span><span class="m">:method GET (static 2)</span>
+          <span class="b">87</span><span class="m">:scheme https (static 7)</span>
+          <span class="b">41 8c …</span><span class="m">:authority shop.example.com</span>
+          <span class="b">44 84 …</span><span class="m">:path /cart</span>
+          <span class="b">53 87 …</span><span class="m">accept text/html</span>
+        </div>
+        <div class="stack"><span class="hot">HTTP/2</span><span>TLS</span><span>TCP</span><span>IP</span></div>
+      </article>
+      <article class="wire">
+        <div class="wire-h"><span class="tag h3v">HTTP/3</span><small>frame on QUIC stream 0</small></div>
+        <div class="bytes">
+          <span class="b">01</span><span class="m">type HEADERS</span>
+          <span class="b">22</span><span class="m">length 34</span>
+          <span class="sep"></span>
+          <span class="b">00 00</span><span class="m">QPACK prefix: no dynamic refs</span>
+          <span class="b">d1</span><span class="m">:method GET (static 17)</span>
+          <span class="b">d7</span><span class="m">:scheme https (static 23)</span>
+          <span class="b">50 8c …</span><span class="m">:authority shop.example.com</span>
+          <span class="b">51 84 …</span><span class="m">:path /cart</span>
+          <span class="b">5f 0e 87 …</span><span class="m">accept text/html</span>
+        </div>
+        <div class="stack"><span class="hot">HTTP/3</span><span>QUIC + TLS 1.3</span><span>UDP</span><span>IP</span></div>
+      </article>
+    </div>
+    <p class="prose" style="margin-top:14px;font-size:15px;color:var(--muted)">“…” marks Huffman-coded values, left out here. HTTP/2 puts the stream ID in every frame header. HTTP/3 drops it from the frame because QUIC already carries each stream separately.</p>
+  </section>
+
+  <section id="handshake">
+    <span class="sec-no">01 · Connection setup</span>
+    <h2>Getting to the first byte</h2>
+    <div class="prose">
+      <p>Before any HTTP moves, client and server must open a connection and agree on encryption keys. Each round trip (RTT) is a full trip across the network and back: about 20 ms within a city, 150 ms or more across an ocean.</p>
+      <p>TCP needs one round trip for its handshake. TLS 1.2 then needs two more, and TLS 1.3 cut that to one. QUIC does the transport and TLS 1.3 handshakes together in a single round trip. When the client has visited the server before, it can send the request in its very first packet.</p>
+    </div>
+    <figure class="fig" id="fig1">
+      <div class="fig-head"><span class="fig-no">Fig. 1</span><h3>Packets exchanged before the first response byte</h3></div>
+      <div class="fig-body">
+        <div class="ladders" id="ladders"><div class="ladder"><div class="ladder-h"><strong>TCP + TLS 1.2</strong><span>HTTP/1.1 era</span></div><svg viewBox="0 0 240 302" role="img" aria-label="TCP + TLS 1.2: first response byte after 4 round trips"><text x="46" y="18" class="t-strong" text-anchor="middle">client</text><text x="212" y="18" class="t-strong" text-anchor="middle">server</text><line x1="46" y1="26" x2="46" y2="296" class="lane"></line><line x1="212" y1="26" x2="212" y2="296" class="lane"></line><text x="36" y="44" class="t-small" text-anchor="end">0</text><text x="36" y="106" class="t-small" text-anchor="end">1</text><text x="36" y="168" class="t-small" text-anchor="end">2</text><text x="36" y="230" class="t-small" text-anchor="end">3</text><text x="36" y="292" class="t-small" text-anchor="end">4</text><text x="4" y="30" class="t-small" text-anchor="start">RTT</text><line x1="42" x2="216" y1="288" y2="288" class="playhead" opacity="0"></line><g class="k-tcp" opacity="1"><line x1="46" y1="40" x2="212" y2="71" stroke-width="1.6"></line><polygon points="212,71 203.40165833032978,73.46343673180634 204.8702456127528,65.59938870334763" stroke="none"></polygon><text x="129" y="50.5" class="t-msg" text-anchor="middle" fill="var(--muted)" stroke="var(--surface)" opacity="1">SYN</text></g><g class="k-tcp" opacity="1"><line x1="212" y1="71" x2="46" y2="102" stroke-width="1.6"></line><polygon points="46,102 53.1297543872472,96.59938870334763 54.59834166967022,104.46343673180634" stroke="none"></polygon><text x="129" y="81.5" class="t-msg" text-anchor="middle" fill="var(--muted)" stroke="var(--surface)" opacity="1">SYN-ACK</text></g><g class="k-tls" opacity="1"><line x1="46" y1="102" x2="212" y2="133" stroke-width="1.6"></line><polygon points="212,133 203.40165833032978,135.46343673180635 204.8702456127528,127.59938870334763" stroke="none"></polygon><text x="129" y="112.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">ACK · ClientHello</text></g><g class="k-tls" opacity="1"><line x1="212" y1="133" x2="46" y2="164" stroke-width="1.6"></line><polygon points="46,164 53.1297543872472,158.5993887033476 54.59834166967022,166.46343673180635" stroke="none"></polygon><text x="129" y="143.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">ServerHello · Cert</text></g><g class="k-tls" opacity="1"><line x1="46" y1="164" x2="212" y2="195" stroke-width="1.6"></line><polygon points="212,195 203.40165833032978,197.46343673180635 204.8702456127528,189.5993887033476" stroke="none"></polygon><text x="129" y="174.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">KeyExch · Finished</text></g><g class="k-tls" opacity="1"><line x1="212" y1="195" x2="46" y2="226" stroke-width="1.6"></line><polygon points="46,226 53.1297543872472,220.5993887033476 54.59834166967022,228.46343673180635" stroke="none"></polygon><text x="129" y="205.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">Finished</text></g><g class="k-http" opacity="1"><line x1="46" y1="226" x2="212" y2="257" stroke-width="2.2"></line><polygon points="212,257 203.40165833032978,259.4634367318063 204.8702456127528,251.5993887033476" stroke="none"></polygon><text x="129" y="236.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">GET /</text></g><g class="k-http" opacity="1"><line x1="212" y1="257" x2="46" y2="288" stroke-width="2.2"></line><polygon points="46,288 53.1297543872472,282.59938870334764 54.59834166967022,290.4634367318063" stroke="none"></polygon><text x="129" y="267.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">200 OK</text></g></svg><div class="ladder-f reached">First byte after <b>4 RTT</b> · 400 ms</div></div><div class="ladder"><div class="ladder-h"><strong>TCP + TLS 1.3</strong><span>HTTP/1.1 or HTTP/2 today</span></div><svg viewBox="0 0 240 302" role="img" aria-label="TCP + TLS 1.3: first response byte after 3 round trips"><text x="46" y="18" class="t-strong" text-anchor="middle">client</text><text x="212" y="18" class="t-strong" text-anchor="middle">server</text><line x1="46" y1="26" x2="46" y2="296" class="lane"></line><line x1="212" y1="26" x2="212" y2="296" class="lane"></line><text x="36" y="44" class="t-small" text-anchor="end">0</text><text x="36" y="106" class="t-small" text-anchor="end">1</text><text x="36" y="168" class="t-small" text-anchor="end">2</text><text x="36" y="230" class="t-small" text-anchor="end">3</text><text x="36" y="292" class="t-small" text-anchor="end">4</text><text x="4" y="30" class="t-small" text-anchor="start">RTT</text><line x1="42" x2="216" y1="288" y2="288" class="playhead" opacity="0"></line><g class="k-tcp" opacity="1"><line x1="46" y1="40" x2="212" y2="71" stroke-width="1.6"></line><polygon points="212,71 203.40165833032978,73.46343673180634 204.8702456127528,65.59938870334763" stroke="none"></polygon><text x="129" y="50.5" class="t-msg" text-anchor="middle" fill="var(--muted)" stroke="var(--surface)" opacity="1">SYN</text></g><g class="k-tcp" opacity="1"><line x1="212" y1="71" x2="46" y2="102" stroke-width="1.6"></line><polygon points="46,102 53.1297543872472,96.59938870334763 54.59834166967022,104.46343673180634" stroke="none"></polygon><text x="129" y="81.5" class="t-msg" text-anchor="middle" fill="var(--muted)" stroke="var(--surface)" opacity="1">SYN-ACK</text></g><g class="k-tls" opacity="1"><line x1="46" y1="102" x2="212" y2="133" stroke-width="1.6"></line><polygon points="212,133 203.40165833032978,135.46343673180635 204.8702456127528,127.59938870334763" stroke="none"></polygon><text x="129" y="112.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">ACK · ClientHello</text></g><g class="k-tls" opacity="1"><line x1="212" y1="133" x2="46" y2="164" stroke-width="1.6"></line><polygon points="46,164 53.1297543872472,158.5993887033476 54.59834166967022,166.46343673180635" stroke="none"></polygon><text x="129" y="143.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">ServerHello … Fin</text></g><g class="k-http" opacity="1"><line x1="46" y1="164" x2="212" y2="195" stroke-width="2.2"></line><polygon points="212,195 203.40165833032978,197.46343673180635 204.8702456127528,189.5993887033476" stroke="none"></polygon><text x="129" y="174.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">Finished · GET /</text></g><g class="k-http" opacity="1"><line x1="212" y1="195" x2="46" y2="226" stroke-width="2.2"></line><polygon points="46,226 53.1297543872472,220.5993887033476 54.59834166967022,228.46343673180635" stroke="none"></polygon><text x="129" y="205.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">200 OK</text></g></svg><div class="ladder-f reached">First byte after <b>3 RTT</b> · 300 ms</div></div><div class="ladder"><div class="ladder-h"><strong>QUIC</strong><span>HTTP/3, first visit</span></div><svg viewBox="0 0 240 302" role="img" aria-label="QUIC: first response byte after 2 round trips"><text x="46" y="18" class="t-strong" text-anchor="middle">client</text><text x="212" y="18" class="t-strong" text-anchor="middle">server</text><line x1="46" y1="26" x2="46" y2="296" class="lane"></line><line x1="212" y1="26" x2="212" y2="296" class="lane"></line><text x="36" y="44" class="t-small" text-anchor="end">0</text><text x="36" y="106" class="t-small" text-anchor="end">1</text><text x="36" y="168" class="t-small" text-anchor="end">2</text><text x="36" y="230" class="t-small" text-anchor="end">3</text><text x="36" y="292" class="t-small" text-anchor="end">4</text><text x="4" y="30" class="t-small" text-anchor="start">RTT</text><line x1="42" x2="216" y1="288" y2="288" class="playhead" opacity="0"></line><g class="k-tls" opacity="1"><line x1="46" y1="40" x2="212" y2="71" stroke-width="1.6"></line><polygon points="212,71 203.40165833032978,73.46343673180634 204.8702456127528,65.59938870334763" stroke="none"></polygon><text x="129" y="50.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">Initial · ClientHello</text></g><g class="k-tls" opacity="1"><line x1="212" y1="71" x2="46" y2="102" stroke-width="1.6"></line><polygon points="46,102 53.1297543872472,96.59938870334763 54.59834166967022,104.46343673180634" stroke="none"></polygon><text x="129" y="81.5" class="t-msg" text-anchor="middle" fill="var(--accent)" stroke="var(--surface)" opacity="1">ServerHello … Fin</text></g><g class="k-http" opacity="1"><line x1="46" y1="102" x2="212" y2="133" stroke-width="2.2"></line><polygon points="212,133 203.40165833032978,135.46343673180635 204.8702456127528,127.59938870334763" stroke="none"></polygon><text x="129" y="112.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">Finished · GET /</text></g><g class="k-http" opacity="1"><line x1="212" y1="133" x2="46" y2="164" stroke-width="2.2"></line><polygon points="46,164 53.1297543872472,158.5993887033476 54.59834166967022,166.46343673180635" stroke="none"></polygon><text x="129" y="143.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">200 OK</text></g></svg><div class="ladder-f reached">First byte after <b>2 RTT</b> · 200 ms</div></div><div class="ladder"><div class="ladder-h"><strong>QUIC 0-RTT</strong><span>HTTP/3, returning visit</span></div><svg viewBox="0 0 240 302" role="img" aria-label="QUIC 0-RTT: first response byte after 1 round trips"><text x="46" y="18" class="t-strong" text-anchor="middle">client</text><text x="212" y="18" class="t-strong" text-anchor="middle">server</text><line x1="46" y1="26" x2="46" y2="296" class="lane"></line><line x1="212" y1="26" x2="212" y2="296" class="lane"></line><text x="36" y="44" class="t-small" text-anchor="end">0</text><text x="36" y="106" class="t-small" text-anchor="end">1</text><text x="36" y="168" class="t-small" text-anchor="end">2</text><text x="36" y="230" class="t-small" text-anchor="end">3</text><text x="36" y="292" class="t-small" text-anchor="end">4</text><text x="4" y="30" class="t-small" text-anchor="start">RTT</text><line x1="42" x2="216" y1="288" y2="288" class="playhead" opacity="0"></line><g class="k-http" opacity="1"><line x1="46" y1="40" x2="212" y2="71" stroke-width="2.2"></line><polygon points="212,71 203.40165833032978,73.46343673180634 204.8702456127528,65.59938870334763" stroke="none"></polygon><text x="129" y="50.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">ClientHello · GET /</text></g><g class="k-http" opacity="1"><line x1="212" y1="71" x2="46" y2="102" stroke-width="2.2"></line><polygon points="46,102 53.1297543872472,96.59938870334763 54.59834166967022,104.46343673180634" stroke="none"></polygon><text x="129" y="81.5" class="t-msg" text-anchor="middle" fill="var(--ink)" stroke="var(--surface)" opacity="1">ServerHello · 200 OK</text></g></svg><div class="ladder-f reached">First byte after <b>1 RTT</b> · 100 ms</div></div></div>
+        <div class="legend ladder-legend"><span><i style="background:var(--muted)"></i>Transport handshake</span><span><i style="background:var(--accent)"></i>TLS handshake</span><span><i style="background:var(--ink)"></i>HTTP request / response</span></div>
+      </div>
+      <div class="ctrl"><button type="button" class="btn" data-play="">Replay</button><input type="range" id="r1" min="0" max="1000" value="1000" aria-label="Scrub Fig. 1"><output data-time="">t = 4.00 RTT</output></div>
+      <figcaption>Time runs downward, and each diagonal is one trip across the network. Times assume a 100 ms round trip. An attacker can replay 0-RTT data, so servers accept it only for requests that are safe to repeat, such as GET.</figcaption>
+    </figure>
+  </section>
+
+  <section id="multiplex">
+    <span class="sec-no">02 · Multiplexing</span>
+    <h2>Many requests at once</h2>
+    <div class="prose">
+      <p>A page is rarely one request. An HTTP/1.1 connection carries one request and response at a time, so browsers open up to six connections per origin and queue everything else. Each extra connection pays for its own handshake, and each request still waits a full round trip for its first byte.</p>
+      <p>HTTP/2 cuts every message into frames tagged with a stream ID, so one connection carries all the requests at once and the responses interleave. HTTP/3 does the same on QUIC streams, after a shorter handshake.</p>
+    </div>
+    <figure class="fig" id="fig2">
+      <div class="fig-head"><span class="fig-no">Fig. 2</span><h3>Loading 18 page resources, one row per connection</h3></div>
+      <div class="fig-body">
+        <div class="legend"><span><i class="f-c1" style="background:var(--c1)"></i>CSS</span><span><i style="background:var(--c2)"></i>JS</span><span><i style="background:var(--c3)"></i>Image</span><span><i style="background:var(--c4)"></i>Font</span><span><i style="background:var(--c5)"></i>JSON</span><span><i class="hs"></i>Handshake</span><span><i class="dash"></i>Waiting for first byte</span></div>
+        <div class="scroll"><svg id="g2" role="img" aria-label="Connection timeline comparing HTTP/1.1, HTTP/2 and HTTP/3 page loads" viewBox="0 0 960 360"><g><line x1="128" x2="128" y1="24" y2="322" stroke="var(--rule)" stroke-width="1.2"></line><text x="128" y="340" class="t-small" text-anchor="middle">0 ms</text><line x1="229.5" x2="229.5" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="229.5" y="340" class="t-small" text-anchor="middle">100</text><line x1="331" x2="331" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="331" y="340" class="t-small" text-anchor="middle">200</text><line x1="432.5" x2="432.5" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="432.5" y="340" class="t-small" text-anchor="middle">300</text><line x1="534" x2="534" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="534" y="340" class="t-small" text-anchor="middle">400</text><line x1="635.5" x2="635.5" y1="24" y2="322" stroke="var(--rule)" stroke-width="1.2"></line><text x="635.5" y="340" class="t-small" text-anchor="middle">500</text><line x1="737" x2="737" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="737" y="340" class="t-small" text-anchor="middle">600</text><line x1="838.5" x2="838.5" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="838.5" y="340" class="t-small" text-anchor="middle">700</text><line x1="940" x2="940" y1="24" y2="322" stroke="var(--rule)" stroke-width="0.6"></line><text x="940" y="340" class="t-small" text-anchor="middle">800</text><text x="0" y="20" class="t-title" text-anchor="start" fill="var(--ink)">HTTP/1.1</text><text x="0" y="38" class="t-small" text-anchor="start">6 connections</text><rect x="128" y="36" width="812" height="14" class="f-sunk" rx="2"></rect><rect x="128" y="56" width="812" height="14" class="f-sunk" rx="2"></rect><rect x="128" y="76" width="812" height="14" class="f-sunk" rx="2"></rect><rect x="128" y="96" width="812" height="14" class="f-sunk" rx="2"></rect><rect x="128" y="116" width="812" height="14" class="f-sunk" rx="2"></rect><rect x="128" y="136" width="812" height="14" class="f-sunk" rx="2"></rect><text x="0" y="188" class="t-title" text-anchor="start" fill="var(--ink)">HTTP/2</text><text x="0" y="206" class="t-small" text-anchor="start">1 connection</text><rect x="128" y="194" width="812" height="26" class="f-sunk" rx="2"></rect><text x="0" y="262" class="t-title" text-anchor="start" fill="var(--ink)">HTTP/3</text><text x="0" y="280" class="t-small" text-anchor="start">1 connection</text><rect x="128" y="268" width="812" height="26" class="f-sunk" rx="2"></rect></g><defs><clippath id="clip2"><rect x="0" y="0" width="960" height="360"></rect></clippath></defs><g clip-path="url(#clip2)"><rect x="128.5" y="37" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="178.75" y="46.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="37" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="280.25" y="46.5" class="t-small" text-anchor="middle">TLS</text><line x1="331" x2="432.5" y1="43" y2="43" class="wait"></line><rect x="432.5" y="37" width="75.11000000000001" height="12" class="f-c1" rx="1.5"></rect><line x1="507.61" x2="609.11" y1="43" y2="43" class="wait"></line><rect x="609.11" y="37" width="20.300000000000068" height="12" class="f-c4" rx="1.5"></rect><line x1="629.4100000000001" x2="730.9100000000001" y1="43" y2="43" class="wait"></line><rect x="730.9100000000001" y="37" width="24.3599999999999" height="12" class="f-c3" rx="1.5"></rect><rect x="128.5" y="57" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="178.75" y="66.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="57" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="280.25" y="66.5" class="t-small" text-anchor="middle">TLS</text><line x1="331" x2="432.5" y1="63" y2="63" class="wait"></line><rect x="432.5" y="57" width="50.75" height="12" class="f-c1" rx="1.5"></rect><line x1="483.25" x2="584.75" y1="63" y2="63" class="wait"></line><rect x="584.75" y="57" width="15.225000000000023" height="12" class="f-c2" rx="1.5"></rect><line x1="599.975" x2="701.475" y1="63" y2="63" class="wait"></line><rect x="701.475" y="57" width="19.284999999999968" height="12" class="f-c3" rx="1.5"></rect><rect x="128.5" y="77" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="178.75" y="86.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="77" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="280.25" y="86.5" class="t-small" text-anchor="middle">TLS</text><line x1="331" x2="432.5" y1="83" y2="83" class="wait"></line><rect x="432.5" y="77" width="122.81500000000005" height="12" class="f-c2" rx="1.5"></rect><line x1="555.315" x2="656.8149999999999" y1="83" y2="83" class="wait"></line><rect x="656.8149999999999" y="77" width="35.52499999999998" height="12" class="f-c3" rx="1.5"></rect><line x1="692.3399999999999" x2="793.8399999999999" y1="83" y2="83" class="wait"></line><rect x="793.8399999999999" y="77" width="14.21000000000015" height="12" class="f-c2" rx="1.5"></rect><rect x="128.5" y="97" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="178.75" y="106.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="97" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="280.25" y="106.5" class="t-small" text-anchor="middle">TLS</text><line x1="331" x2="432.5" y1="103" y2="103" class="wait"></line><rect x="432.5" y="97" width="109.62" height="12" class="f-c2" rx="1.5"></rect><line x1="542.12" x2="643.62" y1="103" y2="103" class="wait"></line><rect x="643.62" y="97" width="42.629999999999995" height="12" class="f-c3" rx="1.5"></rect><line x1="686.25" x2="787.75" y1="103" y2="103" class="wait"></line><rect x="787.75" y="97" width="14.209999999999923" height="12" class="f-c3" rx="1.5"></rect><rect x="128.5" y="117" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="178.75" y="126.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="117" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="280.25" y="126.5" class="t-small" text-anchor="middle">TLS</text><line x1="331" x2="432.5" y1="123" y2="123" class="wait"></line><rect x="432.5" y="117" width="68.005" height="12" class="f-c4" rx="1.5"></rect><line x1="500.505" x2="602.005" y1="123" y2="123" class="wait"></line><rect x="602.005" y="117" width="49.735000000000014" height="12" class="f-c3" rx="1.5"></rect><line x1="651.74" x2="753.24" y1="123" y2="123" class="wait"></line><rect x="753.24" y="117" width="14.209999999999923" height="12" class="f-c3" rx="1.5"></rect><rect x="128.5" y="137" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="178.75" y="146.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="137" width="100.5" height="12" class="f-rule" rx="2"></rect><text x="280.25" y="146.5" class="t-small" text-anchor="middle">TLS</text><line x1="331" x2="432.5" y1="143" y2="143" class="wait"></line><rect x="432.5" y="137" width="95.40999999999997" height="12" class="f-c2" rx="1.5"></rect><line x1="527.91" x2="629.4100000000001" y1="143" y2="143" class="wait"></line><rect x="629.4100000000001" y="137" width="10.149999999999864" height="12" class="f-c5" rx="1.5"></rect><line x1="639.56" x2="741.0600000000001" y1="143" y2="143" class="wait"></line><rect x="741.0600000000001" y="137" width="27.40499999999986" height="12" class="f-c3" rx="1.5"></rect><rect x="128.5" y="195" width="100.5" height="24" class="f-rule" rx="2"></rect><text x="178.75" y="210.5" class="t-small" text-anchor="middle">TCP</text><rect x="230" y="195" width="100.5" height="24" class="f-rule" rx="2"></rect><text x="280.25" y="210.5" class="t-small" text-anchor="middle">TLS 1.3</text><line x1="331" x2="432.5" y1="207" y2="207" class="wait"></line><text x="335" y="191" class="t-small" text-anchor="start">18 requests sent at once</text><rect x="432.5" y="195" width="5.3749999999999885" height="24" class="f-c1"></rect><rect x="437.575" y="195" width="5.375000000000045" height="24" class="f-c1"></rect><rect x="442.65000000000003" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="447.72499999999997" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="452.8" y="195" width="5.3749999999999885" height="24" class="f-c4"></rect><rect x="457.875" y="195" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="462.95" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="468.02500000000003" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="473.09999999999997" y="195" width="5.375000000000045" height="24" class="f-c4"></rect><rect x="478.175" y="195" width="5.3749999999999885" height="24" class="f-c5"></rect><rect x="483.25" y="195" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="488.325" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="493.40000000000003" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="498.47499999999997" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="503.55" y="195" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="508.625" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="513.7" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="518.7750000000001" y="195" width="5.374999999999818" height="24" class="f-c2"></rect><rect x="523.8499999999999" y="195" width="5.375000000000045" height="24" class="f-c1"></rect><rect x="528.925" y="195" width="3.6833333333333256" height="24" class="f-c1"></rect><rect x="532.3083333333333" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="537.3833333333333" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="542.4583333333333" y="195" width="5.375000000000045" height="24" class="f-c4"></rect><rect x="547.5333333333333" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="552.6083333333333" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="557.6833333333334" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="562.7583333333333" y="195" width="5.374999999999932" height="24" class="f-c4"></rect><rect x="567.8333333333333" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="572.9083333333333" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="577.9833333333333" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="583.0583333333334" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="588.1333333333333" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="593.2083333333333" y="195" width="1.9916666666667198" height="24" class="f-c3"></rect><rect x="594.9" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="599.975" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="605.05" y="195" width="3.6833333333334393" height="24" class="f-c1"></rect><rect x="608.4333333333334" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="613.5083333333333" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="618.5833333333333" y="195" width="1.9916666666667198" height="24" class="f-c4"></rect><rect x="620.275" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="625.35" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="630.425" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="635.5" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="640.5749999999999" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="645.65" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="650.725" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="655.8000000000001" y="195" width="3.6833333333333256" height="24" class="f-c3"></rect><rect x="659.1833333333334" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="664.2583333333334" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="669.3333333333334" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="674.4083333333334" y="195" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="679.4833333333333" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="684.5583333333334" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="689.6333333333334" y="195" width="3.6833333333333256" height="24" class="f-c3"></rect><rect x="693.0166666666668" y="195" width="1.991666666666606" height="24" class="f-c3"></rect><rect x="694.7083333333334" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="699.7833333333334" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="704.8583333333333" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="709.9333333333334" y="195" width="3.6833333333333256" height="24" class="f-c3"></rect><rect x="713.3166666666667" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="718.3916666666668" y="195" width="1.991666666666606" height="24" class="f-c2"></rect><rect x="720.0833333333334" y="195" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="725.1583333333334" y="195" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="730.2333333333333" y="195" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="128.5" y="269" width="100.5" height="24" class="f-rule" rx="2"></rect><text x="178.75" y="284.5" class="t-small" text-anchor="middle">QUIC + TLS</text><line x1="229.5" x2="331" y1="281" y2="281" class="wait"></line><text x="233.5" y="265" class="t-small" text-anchor="start">18 requests sent at once</text><rect x="331" y="269" width="5.3749999999999885" height="24" class="f-c1"></rect><rect x="336.075" y="269" width="5.3749999999999885" height="24" class="f-c1"></rect><rect x="341.15" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="346.225" y="269" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="351.3" y="269" width="5.3749999999999885" height="24" class="f-c4"></rect><rect x="356.375" y="269" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="361.45" y="269" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="366.525" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="371.6" y="269" width="5.3749999999999885" height="24" class="f-c4"></rect><rect x="376.675" y="269" width="5.3749999999999885" height="24" class="f-c5"></rect><rect x="381.75" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="386.825" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="391.90000000000003" y="269" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="396.97499999999997" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="402.05" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="407.125" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="412.2" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="417.27500000000003" y="269" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="422.34999999999997" y="269" width="5.375000000000045" height="24" class="f-c1"></rect><rect x="427.425" y="269" width="3.6833333333332687" height="24" class="f-c1"></rect><rect x="430.8083333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="435.8833333333333" y="269" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="440.9583333333333" y="269" width="5.3749999999999885" height="24" class="f-c4"></rect><rect x="446.0333333333333" y="269" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="451.1083333333333" y="269" width="5.3749999999999885" height="24" class="f-c2"></rect><rect x="456.1833333333333" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="461.2583333333333" y="269" width="5.3749999999999885" height="24" class="f-c4"></rect><rect x="466.3333333333333" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="471.4083333333333" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="476.4833333333333" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="481.5583333333333" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="486.6333333333333" y="269" width="5.3749999999999885" height="24" class="f-c3"></rect><rect x="491.7083333333333" y="269" width="1.9916666666667198" height="24" class="f-c3"></rect><rect x="493.40000000000003" y="269" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="498.47499999999997" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="503.55" y="269" width="3.6833333333332687" height="24" class="f-c1"></rect><rect x="506.9333333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="512.0083333333333" y="269" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="517.0833333333333" y="269" width="1.9916666666668335" height="24" class="f-c4"></rect><rect x="518.7750000000001" y="269" width="5.374999999999818" height="24" class="f-c2"></rect><rect x="523.8499999999999" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="528.925" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="534" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="539.075" y="269" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="544.15" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="549.225" y="269" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="554.3" y="269" width="3.6833333333334393" height="24" class="f-c3"></rect><rect x="557.6833333333334" y="269" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="562.7583333333333" y="269" width="5.374999999999932" height="24" class="f-c2"></rect><rect x="567.8333333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="572.9083333333333" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="577.9833333333333" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="583.0583333333334" y="269" width="5.374999999999932" height="24" class="f-c3"></rect><rect x="588.1333333333333" y="269" width="3.6833333333333256" height="24" class="f-c3"></rect><rect x="591.5166666666667" y="269" width="1.991666666666606" height="24" class="f-c3"></rect><rect x="593.2083333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="598.2833333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="603.3583333333333" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="608.4333333333334" y="269" width="3.683333333333212" height="24" class="f-c3"></rect><rect x="611.8166666666666" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="616.8916666666667" y="269" width="1.991666666666606" height="24" class="f-c2"></rect><rect x="618.5833333333333" y="269" width="5.375000000000045" height="24" class="f-c3"></rect><rect x="623.6583333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect><rect x="628.7333333333333" y="269" width="5.375000000000045" height="24" class="f-c2"></rect></g><g opacity="1"><line x1="808.0500000000001" x2="808.0500000000001" y1="32" y2="154" stroke="var(--ink)" stroke-width="2"></line><text x="814.0500000000001" y="152" class="t-strong halo" text-anchor="start" stroke="var(--surface)">done 670 ms</text></g><g opacity="1"><line x1="734.97" x2="734.97" y1="190" y2="224" stroke="var(--ink)" stroke-width="2"></line><text x="740.97" y="218" class="t-strong halo" text-anchor="start" stroke="var(--surface)">done 598 ms</text></g><g opacity="1"><line x1="633.47" x2="633.47" y1="264" y2="298" stroke="var(--ink)" stroke-width="2"></line><text x="639.47" y="292" class="t-strong halo" text-anchor="start" stroke="var(--surface)">done 498 ms</text></g><line y1="20" y2="326" class="playhead" x1="940" x2="940" opacity="0"></line><text x="940" y="14" class="t-strong" text-anchor="middle"></text></svg></div>
+        <div class="stats" id="stats2"><div class="stat h1v"><b>670 ms</b><span>HTTP/1.1 · 6 TCP + 6 TLS handshakes</span></div><div class="stat h2v"><b>598 ms</b><span>HTTP/2 · 1 connection, frames interleaved</span></div><div class="stat h3v"><b>498 ms</b><span>HTTP/3 · 1 RTT saved on setup</span></div></div>
+      </div>
+      <div class="ctrl"><button type="button" class="btn" data-play="">Replay</button><input type="range" id="r2" min="0" max="1000" value="1000" aria-label="Scrub Fig. 2"><output data-time="">800 ms</output></div>
+      <figcaption>Simplified model: 18 resources totalling 895 KB, a 100 ms round trip, a 24 Mbit/s link shared by all transfers, no packet loss and no TCP slow start. Real pages differ, but the pattern holds: HTTP/1.1 spends most of its time waiting between requests, while HTTP/2 and HTTP/3 keep one connection busy.</figcaption>
+    </figure>
+  </section>
+
+  <section id="hol">
+    <span class="sec-no">03 · Head-of-line blocking</span>
+    <h2>When one packet is lost</h2>
+    <div class="prose">
+      <p>HTTP/2 removed head-of-line blocking at the HTTP layer, but the problem moved down to TCP. TCP delivers a single ordered byte stream and doesn't know those bytes belong to three different HTTP/2 streams. If one packet is lost, the kernel holds every byte after it until the retransmission arrives.</p>
+      <p>QUIC does know about streams. A lost packet only stalls the stream whose data it carried.</p>
+    </div>
+    <figure class="fig" id="fig3">
+      <div class="fig-head"><span class="fig-no">Fig. 3</span><h3>Three response streams, one lost packet (A2)</h3></div>
+      <div class="fig-body">
+        <div class="scroll"><svg id="g3tcp" role="img" aria-label="HTTP/2 over TCP: a lost packet blocks all streams" viewBox="0 0 960 212"><text x="16" y="22" class="t-title" text-anchor="start">HTTP/2 over TCP</text><rect x="16" y="60" width="100" height="84" rx="6" class="box"></rect><text x="66" y="98" class="t-strong" text-anchor="middle">server</text><text x="66" y="114" class="t-small" text-anchor="middle">sends A, B, C</text><line x1="140" x2="560" y1="84" y2="84" stroke="var(--rule)" stroke-width="2"></line><line x1="140" x2="560" y1="120" y2="120" stroke="var(--rule)" stroke-width="2"></line><text x="350" y="72" class="t-lab" text-anchor="middle">one ordered byte stream</text><rect x="584" y="40" width="190" height="126" rx="6" class="box-sunk"></rect><text x="679" y="58" class="t-strong" text-anchor="middle">TCP receive buffer</text><rect x="788" y="40" width="156" height="126" rx="6" class="box"></rect><text x="866" y="58" class="t-strong" text-anchor="middle">delivered to browser</text><text x="800" y="82" class="t-strong" text-anchor="start">A</text><rect x="816" y="70" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="858" y="70" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="900" y="70" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><text x="800" y="118" class="t-strong" text-anchor="start">B</text><rect x="816" y="106" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="858" y="106" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="900" y="106" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><text x="800" y="154" class="t-strong" text-anchor="start">C</text><rect x="816" y="142" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="858" y="142" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="900" y="142" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><g opacity="0"><rect x="328" y="90" width="44" height="24" rx="4" class="ghost"></rect><text x="350" y="107" class="t-strong" text-anchor="middle" fill="var(--loss)">✕</text><text x="350" y="138" class="t-lab" text-anchor="middle" fill="var(--loss)">A2 lost</text></g><g opacity="0" transform="translate(515.8433333314662,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A1</text></g><g opacity="0" transform="translate(515.8433333314662,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c2"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">B1</text></g><g opacity="0" transform="translate(515.8746666647991,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c3"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">C1</text></g><g opacity="0" transform="translate(327.87466666479907,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A2</text></g><g opacity="0" transform="translate(515.8433333314662,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c2"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">B2</text></g><g opacity="0" transform="translate(515.8746666647991,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c3"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">C2</text></g><g opacity="0" transform="translate(515.8746666647991,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A3</text></g><g opacity="0" transform="translate(515.8119999981333,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c2"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">B3</text></g><g opacity="0" transform="translate(515.905999998132,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c3"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">C3</text></g><g opacity="0" transform="translate(515.905999998132,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A2</text><rect x="-2" y="-14" width="48" height="28" rx="5" class="retx-outline"></rect></g><text x="537.905999998132" y="140" class="t-lab" text-anchor="middle" opacity="0">retransmit</text><g opacity="1" transform="translate(816,81)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c1"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">A1</text></g><g opacity="1" transform="translate(816,117)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c2"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">B1</text></g><g opacity="1" transform="translate(816,153)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c3"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">C1</text></g><g opacity="1" transform="translate(858,81)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c1"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">A2</text></g><g opacity="1" transform="translate(858,117)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c2"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">B2</text></g><g opacity="1" transform="translate(858,153)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c3"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">C2</text></g><g opacity="1" transform="translate(900,81)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c1"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">A3</text></g><g opacity="1" transform="translate(900,117)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c2"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">B3</text></g><g opacity="1" transform="translate(900,153)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c3"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">C3</text></g><text x="140" y="186" class="t-lab" text-anchor="start" fill="var(--muted)">All data delivered</text><text x="140" y="204" class="t-strong" text-anchor="start">Streams: A done 300 ms   B done 300 ms   C done 300 ms</text></svg></div>
+        <div class="scroll" style="margin-top:10px"><svg id="g3quic" role="img" aria-label="HTTP/3 over QUIC: a lost packet blocks only its own stream" viewBox="0 0 960 212"><text x="16" y="22" class="t-title" text-anchor="start">HTTP/3 over QUIC</text><rect x="16" y="60" width="100" height="84" rx="6" class="box"></rect><text x="66" y="98" class="t-strong" text-anchor="middle">server</text><text x="66" y="114" class="t-small" text-anchor="middle">sends A, B, C</text><line x1="140" x2="560" y1="84" y2="84" stroke="var(--rule)" stroke-width="2"></line><line x1="140" x2="560" y1="120" y2="120" stroke="var(--rule)" stroke-width="2"></line><text x="350" y="72" class="t-lab" text-anchor="middle">independent streams</text><rect x="584" y="40" width="190" height="126" rx="6" class="box-sunk"></rect><text x="679" y="58" class="t-strong" text-anchor="middle">QUIC stream buffers</text><rect x="788" y="40" width="156" height="126" rx="6" class="box"></rect><text x="866" y="58" class="t-strong" text-anchor="middle">delivered to browser</text><text x="800" y="82" class="t-strong" text-anchor="start">A</text><rect x="816" y="70" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="858" y="70" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="900" y="70" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><text x="800" y="118" class="t-strong" text-anchor="start">B</text><rect x="816" y="106" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="858" y="106" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="900" y="106" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><text x="800" y="154" class="t-strong" text-anchor="start">C</text><rect x="816" y="142" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="858" y="142" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><rect x="900" y="142" width="38" height="22" rx="4" fill="none" stroke="var(--rule)" stroke-dasharray="3 3"></rect><g opacity="0"><rect x="328" y="90" width="44" height="24" rx="4" class="ghost"></rect><text x="350" y="107" class="t-strong" text-anchor="middle" fill="var(--loss)">✕</text><text x="350" y="138" class="t-lab" text-anchor="middle" fill="var(--loss)">A2 lost</text></g><g opacity="0" transform="translate(515.8433333314662,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A1</text></g><g opacity="0" transform="translate(515.8433333314662,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c2"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">B1</text></g><g opacity="0" transform="translate(515.8746666647991,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c3"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">C1</text></g><g opacity="0" transform="translate(327.87466666479907,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A2</text></g><g opacity="0" transform="translate(515.8433333314662,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c2"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">B2</text></g><g opacity="0" transform="translate(515.8746666647991,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c3"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">C2</text></g><g opacity="0" transform="translate(515.8746666647991,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A3</text></g><g opacity="0" transform="translate(515.8119999981333,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c2"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">B3</text></g><g opacity="0" transform="translate(515.905999998132,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c3"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">C3</text></g><g opacity="0" transform="translate(515.905999998132,102)"><rect x="0" y="-12" width="44" height="24" rx="4" class="f-c1"></rect><text x="22" y="4" class="t-chip" text-anchor="middle">A2</text><rect x="-2" y="-14" width="48" height="28" rx="5" class="retx-outline"></rect></g><text x="537.905999998132" y="140" class="t-lab" text-anchor="middle" opacity="0">retransmit</text><g opacity="1" transform="translate(816,81)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c1"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">A1</text></g><g opacity="1" transform="translate(816,117)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c2"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">B1</text></g><g opacity="1" transform="translate(816,153)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c3"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">C1</text></g><g opacity="1" transform="translate(858,81)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c1"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">A2</text></g><g opacity="1" transform="translate(858,117)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c2"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">B2</text></g><g opacity="1" transform="translate(858,153)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c3"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">C2</text></g><g opacity="1" transform="translate(900,81)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c1"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">A3</text></g><g opacity="1" transform="translate(900,117)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c2"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">B3</text></g><g opacity="1" transform="translate(900,153)"><rect x="0" y="-12" width="38" height="24" rx="4" class="f-c3"></rect><text x="19" y="4" class="t-chip" text-anchor="middle">C3</text></g><text x="140" y="186" class="t-lab" text-anchor="start" fill="var(--muted)">All data delivered</text><text x="140" y="204" class="t-strong" text-anchor="start">Streams: A done 300 ms   B done 200 ms   C done 220 ms</text></svg></div>
+      </div>
+      <div class="ctrl"><button type="button" class="btn" data-play="">Replay</button><input type="range" id="r3" min="0" max="1000" value="0" aria-label="Scrub Fig. 3"><output data-time="">345 ms</output></div>
+      <figcaption>Both panels have the same packets, the same loss and the same retransmit timing. Only the delivery rule differs: TCP releases bytes in one global order, while QUIC releases each stream in its own order. This is also why HTTP/2 can be slower than HTTP/1.1 on lossy networks. With six HTTP/1.1 connections, a lost packet stalls only one of them.</figcaption>
+    </figure>
+  </section>
+
+  <section id="headers">
+    <span class="sec-no">04 · Header compression</span>
+    <h2>Sending the same headers once</h2>
+    <div class="prose">
+      <p>HTTP/1.1 resends every header as plain text on every request, so the same user-agent, cookie and accept lines cost 400 to 800 bytes each time. HTTP/2’s HPACK keeps a table of recent headers at both ends of the connection. A new header is sent once and added to the table, and after that it costs one byte.</p>
+      <p>HTTP/3 uses QPACK, which works the same way but is redesigned so that streams arriving out of order cannot block each other while their headers are decoded.</p>
+    </div>
+    <figure class="fig" id="fig4">
+      <div class="fig-head"><span class="fig-no">Fig. 4</span><h3>HPACK across three requests on one connection</h3></div>
+      <div class="fig-body">
+        <div class="tabs" role="tablist" aria-label="Request">
+          <button type="button" class="btn ghost" role="tab" id="t1" data-req="0" aria-selected="false" tabindex="-1">1 · GET /api/cart</button>
+          <button type="button" class="btn ghost" role="tab" id="t2" data-req="1" aria-selected="true" tabindex="0">2 · GET /api/orders</button>
+          <button type="button" class="btn ghost" role="tab" id="t3" data-req="2" aria-selected="false" tabindex="-1">3 · GET /api/cart</button>
+        </div>
+        <div class="hp-grid">
+          <div style="min-width:0;overflow-x:auto">
+            <table class="hp-table">
+              <thead><tr><th>Header</th><th>Value</th><th>HPACK sends</th><th class="num">Bytes</th></tr></thead>
+              <tbody id="hpRows"><tr class="flash" style="animation-delay:0ms"><td class="n">:method</td><td class="v" title="GET">GET</td><td><span class="enc static">index 2 (static)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:60ms"><td class="n">:scheme</td><td class="v" title="https">https</td><td><span class="enc static">index 7 (static)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:120ms"><td class="n">:authority</td><td class="v" title="shop.example.com">shop.example.com</td><td><span class="enc dynamic">index 68 (dynamic)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:180ms"><td class="n">:path</td><td class="v" title="/api/orders">/api/orders</td><td><span class="enc literal">literal, name 4, add as 62</span></td><td class="num">11</td></tr><tr class="flash" style="animation-delay:240ms"><td class="n">accept</td><td class="v" title="application/json">application/json</td><td><span class="enc dynamic">index 67 (dynamic)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:300ms"><td class="n">accept-encoding</td><td class="v" title="gzip, deflate, br, zstd">gzip, deflate, br, zstd</td><td><span class="enc dynamic">index 66 (dynamic)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:360ms"><td class="n">accept-language</td><td class="v" title="en-US,en;q=0.9">en-US,en;q=0.9</td><td><span class="enc dynamic">index 65 (dynamic)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:420ms"><td class="n">user-agent</td><td class="v" title="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36</td><td><span class="enc dynamic">index 64 (dynamic)</span></td><td class="num">1</td></tr><tr class="flash" style="animation-delay:480ms"><td class="n">cookie</td><td class="v" title="session=9f8a2c71e4b04d6c8a1f3e5d7b9c0a12; cart_id=c_77412; ab_bucket=checkout_v3; consent=analytics%3Dtrue%26ads%3Dfalse">session=9f8a2c71e4b04d6c8a1f3e5d7b9c0a12; cart_id=c_77412; ab_bucket=checkout_v3; consent=analytics%3Dtrue%26ads%3Dfalse</td><td><span class="enc dynamic">index 63 (dynamic)</span></td><td class="num">1</td></tr></tbody>
+              <tfoot><tr><td colspan="3">HPACK total <span style="color:var(--muted);font-weight:500">vs HTTP/1.1 text</span></td><td class="num" id="hpTotal">19 B <span style="color:var(--muted);font-weight:500">vs 414 B</span></td></tr></tfoot>
+            </table>
+          </div>
+          <div style="min-width:0">
+            <div class="dyn"><h4>Dynamic table after this request</h4><ol id="hpDyn"><li class="new flash"><span><b>62</b></span><span>:path: /api/orders</span></li><li class=""><span><b>63</b></span><span>cookie: session=9f8a2c71e4b04d6c8a1f3e5d7b9c0a12; cart_id=c_77412; ab_bucket=checkout_v3; consent=analytics%3Dtrue%26ads%3Dfalse</span></li><li class=""><span><b>64</b></span><span>user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36</span></li><li class=""><span><b>65</b></span><span>accept-language: en-US,en;q=0.9</span></li><li class=""><span><b>66</b></span><span>accept-encoding: gzip, deflate, br, zstd</span></li><li class=""><span><b>67</b></span><span>accept: application/json</span></li><li class=""><span><b>68</b></span><span>:path: /api/cart</span></li><li class=""><span><b>69</b></span><span>:authority: shop.example.com</span></li></ol></div>
+            <div class="bars" id="hpBars" aria-hidden="true"><div class="bargroup on" data-g="0"><div class="bar h1b" style="height:99.51690821256038%"><em>412</em></div><div class="bar h2b" style="height:61.35265700483091%"><em>254</em></div></div><div class="bargroup on" data-g="1"><div class="bar h1b" style="height:100%"><em>414</em></div><div class="bar h2b" style="height:4.5893719806763285%"><em>19</em></div></div><div class="bargroup" data-g="2"><div class="bar h1b" style="height:99.51690821256038%"><em>412</em></div><div class="bar h2b" style="height:2.1739130434782608%"><em>9</em></div></div></div>
+            <div class="barlabels"><span>Req 1</span><span>Req 2</span><span>Req 3</span></div>
+            <div class="legend" style="margin-top:8px"><span><i style="background:var(--p1)"></i>HTTP/1.1 bytes</span><span><i style="background:var(--p2)"></i>HTTP/2 HPACK bytes</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="ctrl"><button type="button" class="btn" data-play4="">Play</button><span style="font:500 13px var(--mono);color:var(--muted)">Steps through requests 1 → 3</span></div>
+      <figcaption>Byte counts are approximate and assume Huffman coding shrinks values to about 75% of their text length. RFC 7541 fixes the static table (2 = :method GET, 7 = :scheme https, 32 = cookie). Dynamic table entries are numbered from 62, and the newest entry always takes 62.</figcaption>
+    </figure>
+  </section>
+
+  <section id="migration">
+    <span class="sec-no">05 · Connection migration</span>
+    <h2>Walking out of Wi-Fi range</h2>
+    <div class="prose">
+      <p>The kernel identifies a TCP connection by four values: source IP, source port, destination IP and destination port. When a phone moves from Wi-Fi to cellular, its IP address changes and the old connection is gone. The app has to open a new connection, handshake again and repeat the request.</p>
+      <p>QUIC identifies a connection by a connection ID carried in every packet. The server recognises the same connection arriving from a new address, checks that the new path works and carries on.</p>
+    </div>
+    <figure class="fig" id="fig5">
+      <div class="fig-head"><span class="fig-no">Fig. 5</span><h3>A 4 MB download while the phone switches networks</h3></div>
+      <div class="fig-body"><div class="scroll"><svg id="g5" role="img" aria-label="TCP download stalls on network change while QUIC continues" viewBox="0 0 960 300"><rect x="16" y="10" width="452" height="84" rx="8" class="box-sunk"></rect><text x="30" y="30" class="t-strong" text-anchor="start">Home Wi-Fi</text><text x="30" y="46" class="t-lab" text-anchor="start">client IP 192.168.1.23</text><rect x="492" y="10" width="452" height="84" rx="8" class="box-sunk"></rect><text x="930" y="30" class="t-strong" text-anchor="end">Cellular</text><text x="930" y="46" class="t-lab" text-anchor="end">client IP 100.64.12.9</text><g transform="translate(720,60)"><rect x="-13" y="-23" width="26" height="46" rx="5" fill="var(--ink)"></rect><rect x="-10" y="-18" width="20" height="33" rx="2" class="f-surface"></rect><circle cx="0" cy="19" r="2" class="f-surface"></circle></g><text x="16" y="136" class="t-title" text-anchor="start">HTTP/2 over TCP</text><text x="16" y="156" class="t-lab" text-anchor="start" fill="var(--muted)">4-tuple 100.64.12.9:40022 → :443</text><rect x="250" y="124" width="600" height="16" rx="3" class="f-sunk"></rect><rect x="250" y="124" width="600" height="16" rx="3" class="f-p2"></rect><text x="860" y="137" class="t-strong" text-anchor="start">100%</text><text x="250" y="160" class="t-lab" text-anchor="start" fill="var(--muted)">Done</text><text x="250" y="176" class="t-small" text-anchor="start">paid 3 extra round trips plus the app’s retry logic</text><text x="16" y="226" class="t-title" text-anchor="start">HTTP/3 over QUIC</text><text x="16" y="246" class="t-lab" text-anchor="start" fill="var(--muted)">connection ID 7c3e9a41b2d0 · now via 100.64.12.9</text><rect x="250" y="214" width="600" height="16" rx="3" class="f-sunk"></rect><rect x="250" y="214" width="600" height="16" rx="3" class="f-p3"></rect><text x="860" y="227" class="t-strong" text-anchor="start">100%</text><text x="250" y="250" class="t-lab" text-anchor="start" fill="var(--muted)">Done</text><text x="250" y="266" class="t-small" text-anchor="start">the network change cost almost nothing</text></svg></div></div>
+      <div class="ctrl"><button type="button" class="btn" data-play="">Replay</button><input type="range" id="r5" min="0" max="1000" value="0" aria-label="Scrub Fig. 5"><output data-time="">6.8 s</output></div>
+      <figcaption>Only the client can migrate a connection. QUIC also survives NAT rebinding, when a home router quietly assigns a new external port to an idle flow, which otherwise breaks long-lived TCP connections such as websockets. A new connection ID is used after migration, so an observer on the network can’t link the old and new paths.</figcaption>
+    </figure>
+  </section>
+
+  <section id="discovery">
+    <span class="sec-no">Version choice</span>
+    <h2>How the browser picks a version</h2>
+    <div class="prose"><p>No URL says “HTTP/2”. The browser and server agree on a version during connection setup, and HTTP/3 is something the browser has to discover first.</p></div>
+    <ol class="steps">
+      <li><div><b>ALPN inside the TLS handshake.</b> The ClientHello lists the protocols the browser speaks, and the server picks one in its reply. No extra round trip is needed.<pre>ClientHello  ALPN: h2, http/1.1
+ServerHello  ALPN: h2</pre></div></li>
+      <li><div><b>The server advertises HTTP/3.</b> A response over HTTP/2 includes an Alt-Svc header saying QUIC is available on UDP 443 for the next day.<pre>alt-svc: h3=":443"; ma=86400</pre></div></li>
+      <li><div><b>The browser races QUIC against TCP.</b> On later connections it tries QUIC and TCP at the same time. If a firewall drops UDP, it quietly stays on HTTP/2.</div></li>
+      <li><div><b>Skipping the first-visit penalty.</b> An HTTPS DNS record (RR type 65) can announce h3 before any connection is made, so even the first visit can use HTTP/3.<pre>shop.example.com. 300 IN HTTPS 1 . alpn="h3,h2"</pre></div></li>
+    </ol>
+  </section>
+
+  <section id="compare">
+    <span class="sec-no">Reference</span>
+    <h2>Side by side</h2>
+    <div class="tbl-wrap">
+      <table class="cmp">
+        <thead><tr><th></th><th><span class="tag h1v">HTTP/1.1</span></th><th><span class="tag h2v">HTTP/2</span></th><th><span class="tag h3v">HTTP/3</span></th></tr></thead>
+        <tbody>
+          <tr><th>Standard</th><td>1997 (RFC 2068), now RFC 9112</td><td>2015 (RFC 7540), now RFC 9113</td><td>2022 (RFC 9114)</td></tr>
+          <tr><th>Transport</th><td>TCP</td><td>TCP</td><td>QUIC over UDP</td></tr>
+          <tr><th>Encoding</th><td>Text, CRLF-delimited</td><td>Binary frames</td><td>Binary frames</td></tr>
+          <tr><th>Requests per connection</th><td>One at a time</td><td class="good">Many, interleaved</td><td class="good">Many, interleaved</td></tr>
+          <tr><th>Header compression</th><td>None</td><td>HPACK</td><td>QPACK</td></tr>
+          <tr><th>Head-of-line blocking</th><td>Per connection</td><td>Whole connection (TCP)</td><td class="good">Only the affected stream</td></tr>
+          <tr><th>Before first request</th><td>2–3 RTT</td><td>2 RTT with TLS 1.3</td><td class="good">1 RTT, or 0 when resuming</td></tr>
+          <tr><th>Encryption</th><td>Optional</td><td>Optional in spec, required by browsers</td><td>Always: TLS 1.3 built in</td></tr>
+          <tr><th>Connection identity</th><td>IP and port 4-tuple</td><td>IP and port 4-tuple</td><td class="good">Connection ID</td></tr>
+          <tr><th>ALPN token</th><td><code>http/1.1</code></td><td><code>h2</code></td><td><code>h3</code></td></tr>
+          <tr><th>Server push</th><td>None</td><td>Specified; removed from Chrome in 2022</td><td>Specified; rarely deployed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="practice">
+    <span class="sec-no">In practice</span>
+    <h2>What it means for your stack</h2>
+    <div class="practice">
+      <div><h3>Your code rarely changes</h3><p>RFC 9110 defines the semantics for all three versions, so methods, status codes, caching and headers behave the same. Upgrading is usually a setting on the server, CDN or load balancer.</p></div>
+      <div><h3>Remove HTTP/1.1 workarounds</h3><p>Domain sharding spreads traffic over extra connections and undoes multiplexing and header compression. Image sprites and aggressive bundling matter much less than they used to.</p></div>
+      <div><h3>Keep HTTP/2 enabled</h3><p>Some corporate and public networks block or throttle UDP. Browsers fall back to HTTP/2 without telling anyone, so HTTP/3 should be an addition, never a replacement.</p></div>
+      <div><h3>Mixed versions per hop are normal</h3><p>A common setup uses HTTP/2 or HTTP/3 from the browser to the CDN or load balancer, then HTTP/1.1 to the origin. That inner hop has low latency and little loss, so multiplexing gains little there.</p></div>
+      <div><h3>QUIC costs CPU</h3><p>QUIC runs in user space rather than the kernel and costs roughly twice as much CPU per byte as TCP. UDP segmentation offload is narrowing the gap. In return, QUIC improvements ship without a kernel upgrade.</p></div>
+      <div><h3>Checking which version you got</h3><p>Turn on the Protocol column in the DevTools Network tab. From a script, use <code>performance.getEntriesByType('resource')[0].nextHopProtocol</code>. From a terminal, run <code>curl -sI --http3 https://…</code> if your curl was built with HTTP/3.</p></div>
+    </div>
+  </section>
+
+  <footer>Figures are simplified teaching models. Standards: RFC 9110 (semantics), 9112 (HTTP/1.1), 9113 (HTTP/2), 7541 (HPACK), 9000 (QUIC), 9001 (QUIC-TLS), 9114 (HTTP/3), 9204 (QPACK), 9460 (HTTPS DNS records).</footer>
+</div>
+
+<script>
+(function(){
+const NS='http://www.w3.org/2000/svg';
+const reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+function el(tag, attrs, parent){ const e=document.createElementNS(NS,tag); for(const k in attrs) e.setAttribute(k, attrs[k]); if(parent) parent.appendChild(e); return e; }
+function txt(parent, x, y, s, cls, anchor){ const t=el('text',{x,y,class:cls||'t-lab','text-anchor':anchor||'start'},parent); t.textContent=s; return t; }
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+
+/* Generic timeline player: Play/Pause, scrub slider, time readout, autoplay once when visible */
+function player(fig, {duration, render, rest, fmt}){
+  const btn=fig.querySelector('[data-play]'), range=fig.querySelector('input[type=range]'), out=fig.querySelector('[data-time]');
+  let t=rest, playing=false, last=0, raf=0, autoplayed=false;
+  function draw(){ render(t, playing); range.value=Math.round(t/duration*1000); if(out) out.textContent=fmt(t); }
+  function frame(now){ if(!playing) return; t=Math.min(duration, t+(now-last)); last=now; if(t>=duration){ playing=false; draw(); label(); return; } draw(); raf=requestAnimationFrame(frame); }
+  function label(){ btn.textContent = playing ? 'Pause' : (t>=duration ? 'Replay' : 'Play'); }
+  function play(){ if(t>=duration) t=0; playing=true; last=performance.now(); label(); raf=requestAnimationFrame(frame); }
+  function stop(){ playing=false; cancelAnimationFrame(raf); label(); draw(); }
+  btn.addEventListener('click', ()=> playing ? stop() : play());
+  range.addEventListener('input', ()=>{ playing=false; cancelAnimationFrame(raf); t=range.value/1000*duration; label(); draw(); });
+  draw(); label();
+  if(!reduced && 'IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting && !autoplayed){ autoplayed=true; io.disconnect(); t=0; play(); } }); },{threshold:.45});
+    io.observe(fig);
+  }
+}
+
+/* ---------- Fig 1: handshake ladders ---------- */
+const LADDERS=[
+  {title:'TCP + TLS 1.2', sub:'HTTP/1.1 era', msgs:[['c',0,'SYN','tcp'],['s',1,'SYN-ACK','tcp'],['c',2,'ACK · ClientHello','tls'],['s',3,'ServerHello · Cert','tls'],['c',4,'KeyExch · Finished','tls'],['s',5,'Finished','tls'],['c',6,'GET /','http'],['s',7,'200 OK','http']]},
+  {title:'TCP + TLS 1.3', sub:'HTTP/1.1 or HTTP/2 today', msgs:[['c',0,'SYN','tcp'],['s',1,'SYN-ACK','tcp'],['c',2,'ACK · ClientHello','tls'],['s',3,'ServerHello … Fin','tls'],['c',4,'Finished · GET /','http'],['s',5,'200 OK','http']]},
+  {title:'QUIC', sub:'HTTP/3, first visit', msgs:[['c',0,'Initial · ClientHello','tls'],['s',1,'ServerHello … Fin','tls'],['c',2,'Finished · GET /','http'],['s',3,'200 OK','http']]},
+  {title:'QUIC 0-RTT', sub:'HTTP/3, returning visit', msgs:[['c',0,'ClientHello · GET /','http'],['s',1,'ServerHello · 200 OK','http']]}
+];
+const LW=240, CX=46, SX=212, Y0=40, H2=31, LH=Y0+8*H2+14, HALF=650;
+const ladderState=[];
+(function(){
+  const host=document.getElementById('ladders');
+  LADDERS.forEach(L=>{
+    const endHalf=L.msgs.length, rtt=endHalf/2;
+    const card=document.createElement('div'); card.className='ladder';
+    card.innerHTML='<div class="ladder-h"><strong>'+L.title+'</strong><span>'+L.sub+'</span></div>';
+    const svg=el('svg',{viewBox:'0 0 '+LW+' '+LH,role:'img','aria-label':L.title+': first response byte after '+rtt+' round trips'});
+    card.appendChild(svg);
+    txt(svg,CX,18,'client','t-strong','middle'); txt(svg,SX,18,'server','t-strong','middle');
+    el('line',{x1:CX,y1:26,x2:CX,y2:LH-6,class:'lane'},svg); el('line',{x1:SX,y1:26,x2:SX,y2:LH-6,class:'lane'},svg);
+    for(let r=0;r<=4;r++){ txt(svg,CX-10,Y0+r*2*H2+4,r+'','t-small','end'); }
+    txt(svg,4,Y0-10,'RTT','t-small','start');
+    const ph=el('line',{x1:CX-4,x2:SX+4,y1:Y0,y2:Y0,class:'playhead',opacity:0},svg);
+    const msgs=L.msgs.map(([from,start,label,kind])=>{
+      const g=el('g',{class:'k-'+kind},svg);
+      const x0=from==='c'?CX:SX, x1=from==='c'?SX:CX, y0=Y0+start*H2, y1=y0+H2;
+      const line=el('line',{x1:x0,y1:y0,x2:x1,y2:y1,'stroke-width':kind==='http'?2.2:1.6},g);
+      const head=el('polygon',{points:'0,0',stroke:'none'},g);
+      const t=txt(g,(CX+SX)/2,(y0+y1)/2-5,label,'t-msg','middle');
+      t.setAttribute('fill', kind==='tcp'?'var(--muted)':kind==='tls'?'var(--accent)':'var(--ink)'); t.setAttribute('stroke','var(--surface)');
+      return {g,line,head,t,x0,x1,y0,y1,start};
+    });
+    const foot=document.createElement('div'); foot.className='ladder-f';
+    foot.innerHTML='First byte after <b>'+rtt+' RTT</b> · '+(rtt*100)+' ms';
+    card.appendChild(foot); host.appendChild(card);
+    ladderState.push({msgs,ph,foot,endHalf});
+  });
+})();
+function renderLadders(t, playing){
+  const half=t/HALF;
+  ladderState.forEach(s=>{
+    s.msgs.forEach(m=>{
+      const p=clamp(half-m.start,0,1);
+      m.g.setAttribute('opacity', p>0?1:0);
+      const tx=m.x0+(m.x1-m.x0)*p, ty=m.y0+(m.y1-m.y0)*p;
+      m.line.setAttribute('x2',tx); m.line.setAttribute('y2',ty);
+      const a=Math.atan2(m.y1-m.y0,m.x1-m.x0), c=Math.cos(a), sn=Math.sin(a);
+      const bx=tx-8*c, by=ty-8*sn;
+      m.head.setAttribute('points',tx+','+ty+' '+(bx-4*sn)+','+(by+4*c)+' '+(bx+4*sn)+','+(by-4*c));
+      m.t.setAttribute('opacity', clamp(p*2,0,1));
+    });
+    const y=Y0+Math.min(half,8)*H2;
+    s.ph.setAttribute('y1',y); s.ph.setAttribute('y2',y);
+    s.ph.setAttribute('opacity', (playing||t<8*HALF) && half<=8 && t>0 ? .7 : 0);
+    s.foot.classList.toggle('reached', half>=s.endHalf);
+  });
+}
+const D1=8*HALF+500;
+player(document.getElementById('fig1'),{duration:D1,rest:D1,render:renderLadders,fmt:t=>{const r=Math.min(t/HALF/2,4);return 't = '+r.toFixed(2)+' RTT';}});
+
+/* ---------- Fig 2: page load simulation ---------- */
+const RTT=100, C=3; // C = KB per ms (24 Mbit/s)
+const RES=[['main.css','css',40],['theme.css','css',25],['app.js','js',120],['vendor.js','js',80],['inter.woff2','font',35],['cart.js','js',60],['ui.js','js',45],['hero.jpg','img',90],['mono.woff2','font',30],['config.json','json',15],['p1.webp','img',70],['p2.webp','img',60],['p3.webp','img',55],['p4.webp','img',50],['banner.webp','img',40],['logo.svg','img',20],['sprite.png','img',30],['analytics.js','js',30]];
+const KCLS={css:'f-c1',js:'f-c2',img:'f-c3',font:'f-c4',json:'f-c5'};
+function simH1(){
+  const conns=Array.from({length:6},()=>({state:'hs',segs:[],cur:null}));
+  const q=RES.map((r,i)=>i), rem=RES.map(r=>r[2]); let done=0,t=0,finish=0;
+  while(done<RES.length && t<6000){
+    conns.forEach(c=>{
+      if(c.state==='hs' && t>=2*RTT) c.state='idle';
+      if(c.state==='idle'){ if(q.length){ c.cur={res:q.shift(),req:t,start:t+RTT}; c.state='wait'; } else c.state='closed'; }
+      if(c.state==='wait' && t>=c.cur.start) c.state='xfer';
+    });
+    const act=conns.filter(c=>c.state==='xfer'), share=C/(act.length||1);
+    act.forEach(c=>{ rem[c.cur.res]-=share; if(rem[c.cur.res]<=1e-9){ c.cur.end=t+1; c.segs.push(c.cur); c.state='idle'; done++; finish=t+1; } });
+    t++;
+  }
+  return {lanes:conns.map(c=>c.segs),finish};
+}
+function simMux(ready){
+  const rem=RES.map(r=>r[2]), active=RES.map((r,i)=>i), frames=[]; let t=ready+RTT, idx=0; const SLOT=5;
+  while(active.length){
+    const k=idx%active.length, i=active[k], amt=Math.min(rem[i],C*SLOT), d=amt/C;
+    frames.push({res:i,start:t,end:t+d}); t+=d; rem[i]-=amt;
+    if(rem[i]<=1e-9){ active.splice(k,1); idx=k; } else idx=k+1;
+  }
+  return {frames,finish:Math.round(t),ready};
+}
+const S1=simH1(), S2=simMux(2*RTT), S3=simMux(RTT);
+const MAXT=Math.ceil((S1.finish+60)/100)*100;
+(function(){
+  const svg=document.getElementById('g2'), W=960, L=128, PW=W-L-20, H=360;
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  const x=t=>L+t/MAXT*PW;
+  // static backgrounds & labels
+  const bg=el('g',{},svg);
+  for(let t=0;t<=MAXT;t+=100){ el('line',{x1:x(t),x2:x(t),y1:24,y2:322,stroke:'var(--rule)','stroke-width':t%500?0.6:1.2},bg); txt(bg,x(t),340,t+(t===0?' ms':''),'t-small','middle'); }
+  const sections=[{label:'HTTP/1.1',cls:'f-p1',y:30,lanes:6,lh:14,gap:6,sub:'6 connections'},{label:'HTTP/2',cls:'f-p2',y:194,lanes:1,lh:26,gap:0,sub:'1 connection'},{label:'HTTP/3',cls:'f-p3',y:268,lanes:1,lh:26,gap:0,sub:'1 connection'}];
+  sections.forEach(s=>{
+    txt(bg,0,s.y-10+ (s.lanes>1?0:4),s.label,'t-title').setAttribute('class','t-title');
+    bg.lastChild.setAttribute('fill','var(--ink)');
+    txt(bg,0,s.y+8+(s.lanes>1?0:4),s.sub,'t-small');
+    s.laneY=[];
+    for(let i=0;i<s.lanes;i++){ const y=s.y+i*(s.lh+s.gap)+(s.lanes>1?6:0); s.laneY.push(y); el('rect',{x:x(0),y,width:PW,height:s.lh,class:'f-sunk',rx:2},bg); }
+  });
+  // clipped content
+  const defs=el('defs',{},svg), cp=el('clipPath',{id:'clip2'},defs); const clipRect=el('rect',{x:0,y:0,width:W,height:H},cp);
+  const g=el('g',{'clip-path':'url(#clip2)'},svg);
+  function hs(y,h,t0,t1,label){ el('rect',{x:x(t0)+.5,y:y+1,width:x(t1)-x(t0)-1,height:h-2,class:'f-rule',rx:2},g); if(h>=14) txt(g,(x(t0)+x(t1))/2,y+h/2+3.5,label,'t-small','middle'); }
+  // HTTP/1.1
+  const s1=sections[0];
+  S1.lanes.forEach((segs,i)=>{
+    const y=s1.laneY[i], h=s1.lh;
+    hs(y,h,0,RTT,'TCP'); hs(y,h,RTT,2*RTT,'TLS');
+    segs.forEach(sg=>{
+      el('line',{x1:x(sg.req),x2:x(sg.start),y1:y+h/2,y2:y+h/2,class:'wait'},g);
+      el('rect',{x:x(sg.start),y:y+1,width:Math.max(1,x(sg.end)-x(sg.start)),height:h-2,class:KCLS[RES[sg.res][1]],rx:1.5},g);
+    });
+  });
+  [[sections[1],S2,[[0,RTT,'TCP'],[RTT,2*RTT,'TLS 1.3']]],[sections[2],S3,[[0,RTT,'QUIC + TLS']]]].forEach(([s,S,hss])=>{
+    const y=s.laneY[0], h=s.lh;
+    hss.forEach(([a,b,l])=>hs(y,h,a,b,l));
+    el('line',{x1:x(S.ready),x2:x(S.ready+RTT),y1:y+h/2,y2:y+h/2,class:'wait'},g);
+    txt(g,x(S.ready)+4,y-3,'18 requests sent at once','t-small');
+    S.frames.forEach(f=>el('rect',{x:x(f.start),y:y+1,width:Math.max(.8,x(f.end)-x(f.start)+.3),height:h-2,class:KCLS[RES[f.res][1]]},g));
+  });
+  // finish markers
+  const marks=[[s1,S1.finish,'f-p1'],[sections[1],S2.finish,'f-p2'],[sections[2],S3.finish,'f-p3']].map(([s,f,c])=>{
+    const mg=el('g',{},svg); const top=s.laneY[0]-4, bot=s.laneY[s.laneY.length-1]+s.lh+4;
+    el('line',{x1:x(f),x2:x(f),y1:top,y2:bot,stroke:'var(--ink)','stroke-width':2},mg);
+    const t=txt(mg,x(f)+6,bot-(s.lanes>1?2:6),'done '+f+' ms','t-strong halo'); t.setAttribute('stroke','var(--surface)');
+    return {mg,f};
+  });
+  const ph=el('line',{y1:20,y2:326,class:'playhead'},svg);
+  const phT=txt(svg,0,14,'','t-strong','middle');
+  const stats=document.getElementById('stats2');
+  stats.innerHTML=
+    '<div class="stat h1v"><b>'+S1.finish+' ms</b><span>HTTP/1.1 · 6 TCP + 6 TLS handshakes</span></div>'+
+    '<div class="stat h2v"><b>'+S2.finish+' ms</b><span>HTTP/2 · 1 connection, frames interleaved</span></div>'+
+    '<div class="stat h3v"><b>'+S3.finish+' ms</b><span>HTTP/3 · 1 RTT saved on setup</span></div>';
+  const D2=7200;
+  player(document.getElementById('fig2'),{duration:D2,rest:D2,fmt:t=>Math.round(t/D2*MAXT)+' ms',render:(t)=>{
+    const st=t/D2*MAXT, end=t>=D2;
+    clipRect.setAttribute('width', end?W:x(st));
+    marks.forEach(m=>m.mg.setAttribute('opacity', st>=m.f?1:0));
+    ph.setAttribute('x1',x(st)); ph.setAttribute('x2',x(st)); ph.setAttribute('opacity', end||t===0?0:.8);
+    phT.setAttribute('x',x(st)); phT.textContent=end?'':Math.round(st)+' ms';
+  }});
+})();
+
+/* ---------- Fig 3: head-of-line blocking ---------- */
+(function(){
+  const PK=['A1','B1','C1','A2','B2','C2','A3','B3','C3'], E=400, T=1200, LOST=3, RET=4800, D3=6900, REST=5000, SCALE=0.05;
+  const arrival=PK.map((p,i)=> i===LOST ? RET+T : i*E+T);
+  const scls={A:'f-c1',B:'f-c2',C:'f-c3'};
+  const deliverTCP=PK.map((p,i)=>Math.max(...arrival.slice(0,i+1)));
+  const deliverQUIC=PK.map((p,i)=>Math.max(...arrival.filter((a,j)=>j<=i && PK[j][0]===p[0])));
+  const P0=140, P1=560, CW=44;
+  function chip(parent,label,cls){ const g=el('g',{},parent); el('rect',{x:0,y:-12,width:CW,height:24,rx:4,class:cls},g); txt(g,CW/2,4,label,'t-chip','middle'); return g; }
+  function build(id, title, pipeLabel, bufLabel, deliver){
+    const svg=document.getElementById(id); svg.setAttribute('viewBox','0 0 960 212');
+    txt(svg,16,22,title,'t-title');
+    el('rect',{x:16,y:60,width:100,height:84,rx:6,class:'box'},svg); txt(svg,66,98,'server','t-strong','middle'); txt(svg,66,114,'sends A, B, C','t-small','middle');
+    el('line',{x1:P0,x2:P1,y1:84,y2:84,stroke:'var(--rule)','stroke-width':2},svg); el('line',{x1:P0,x2:P1,y1:120,y2:120,stroke:'var(--rule)','stroke-width':2},svg);
+    txt(svg,(P0+P1)/2,72,pipeLabel,'t-lab','middle');
+    el('rect',{x:584,y:40,width:190,height:126,rx:6,class:'box-sunk'},svg); txt(svg,679,58,bufLabel,'t-strong','middle');
+    el('rect',{x:788,y:40,width:156,height:126,rx:6,class:'box'},svg); txt(svg,866,58,'delivered to browser','t-strong','middle');
+    ['A','B','C'].forEach((s,k)=>{ txt(svg,800,82+k*36,s,'t-strong'); for(let n=0;n<3;n++) el('rect',{x:816+n*42,y:70+k*36,width:38,height:22,rx:4,fill:'none',stroke:'var(--rule)','stroke-dasharray':'3 3'},svg); });
+    const ghost=el('g',{},svg); el('rect',{x:P0+(P1-P0-CW)*.5,y:90,width:CW,height:24,rx:4,class:'ghost'},ghost);
+    const gx=txt(ghost,P0+(P1-P0-CW)*.5+CW/2,107,'✕','t-strong','middle'); gx.setAttribute('fill','var(--loss)');
+    const gl=txt(ghost,P0+(P1-P0-CW)*.5+CW/2,138,'A2 lost','t-lab','middle'); gl.setAttribute('fill','var(--loss)');
+    const inflight=PK.map(p=>chip(svg,p,scls[p[0]]));
+    const retx=chip(svg,'A2',scls.A); el('rect',{x:-2,y:-14,width:CW+4,height:28,rx:5,class:'retx-outline'},retx);
+    const retxLab=txt(svg,0,0,'retransmit','t-lab','middle');
+    const recv=PK.map(p=>{ const g=chip(svg,p,scls[p[0]]); g.firstChild.setAttribute('width',38); g.lastChild.setAttribute('x',19); return g; });
+    const status=txt(svg,P0,186,'','t-lab');
+    const done=txt(svg,P0,204,'','t-strong');
+    return {inflight,retx,retxLab,recv,status,done,ghost,deliver};
+  }
+  const panels=[build('g3tcp','HTTP/2 over TCP','one ordered byte stream','TCP receive buffer',deliverTCP), build('g3quic','HTTP/3 over QUIC','independent streams','QUIC stream buffers',deliverQUIC)];
+  const px=p=>P0+p*(P1-P0-CW);
+  function render(t){
+    panels.forEach(P=>{
+      PK.forEach((p,i)=>{
+        const g=P.inflight[i], pr=(t-i*E)/T;
+        let vis = pr>=0 && pr<1; if(i===LOST && pr>=.5) vis=false;
+        g.setAttribute('opacity',vis?1:0); if(vis) g.setAttribute('transform','translate('+px(pr)+',102)');
+      });
+      const lostP=(t-LOST*E)/T; P.ghost.setAttribute('opacity', lostP>=.5 && t<arrival[LOST] ? 1 : 0);
+      const rp=(t-RET)/T, rv=rp>=0&&rp<1;
+      P.retx.setAttribute('opacity',rv?1:0); P.retxLab.setAttribute('opacity',rv?1:0);
+      if(rv){ P.retx.setAttribute('transform','translate('+px(rp)+',102)'); P.retxLab.setAttribute('x',px(rp)+CW/2); P.retxLab.setAttribute('y',140); }
+      const buffered=[];
+      PK.forEach((p,i)=>{
+        const g=P.recv[i];
+        if(t<arrival[i]){ g.setAttribute('opacity',0); return; }
+        g.setAttribute('opacity',1);
+        if(t<P.deliver[i]){ buffered.push(p); const k=buffered.length-1; g.setAttribute('transform','translate('+(596+(k%3)*58)+','+(88+Math.floor(k/3)*40)+')'); }
+        else { const s='ABC'.indexOf(p[0]), n=+p[1]-1; g.setAttribute('transform','translate('+(816+n*42)+','+(81+s*36)+')'); }
+      });
+      if(buffered.length) { P.status.textContent='Waiting for A2 · holding '+buffered.join(', '); P.status.setAttribute('fill','var(--loss)'); }
+      else if(t>=arrival[LOST]) { P.status.textContent='All data delivered'; P.status.setAttribute('fill','var(--muted)'); }
+      else { P.status.textContent=t>=LOST*E+T*.5?'A2 lost; later packets keep arriving':'Packets in flight'; P.status.setAttribute('fill','var(--muted)'); }
+      const parts=['A','B','C'].map(s=>{ const fin=Math.max(...PK.map((p,i)=>p[0]===s?P.deliver[i]:0)); return t>=fin ? s+' done '+Math.round(fin*SCALE)+' ms' : s+' …'; });
+      P.done.textContent='Streams: '+parts.join('   ');
+    });
+  }
+  player(document.getElementById('fig3'),{duration:D3,rest:REST,render,fmt:t=>Math.round(t*SCALE)+' ms'});
+})();
+
+/* ---------- Fig 4: HPACK ---------- */
+(function(){
+  const UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';
+  const COOKIE='session=9f8a2c71e4b04d6c8a1f3e5d7b9c0a12; cart_id=c_77412; ab_bucket=checkout_v3; consent=analytics%3Dtrue%26ads%3Dfalse';
+  const PATHS=['/api/cart','/api/orders','/api/cart'];
+  const FULL={':method|GET':2,':scheme|https':7};
+  const NAME={':authority':1,':path':4,'accept':19,'accept-encoding':16,'accept-language':17,'cookie':32,'user-agent':58};
+  const H1NAME={'accept':'Accept','accept-encoding':'Accept-Encoding','accept-language':'Accept-Language','user-agent':'User-Agent','cookie':'Cookie'};
+  const hdrs=p=>[[':method','GET'],[':scheme','https'],[':authority','shop.example.com'],[':path',p],['accept','application/json'],['accept-encoding','gzip, deflate, br, zstd'],['accept-language','en-US,en;q=0.9'],['user-agent',UA],['cookie',COOKIE]];
+  const dyn=[]; const results=[];
+  PATHS.forEach(path=>{
+    const h=hdrs(path); const added=[];
+    const rows=h.map(([n,v])=>{
+      const key=n+'|'+v;
+      if(FULL[key]) return {n,v,kind:'static',label:'index '+FULL[key]+' (static)',bytes:1};
+      const di=dyn.findIndex(e=>e.key===key);
+      if(di>=0) return {n,v,kind:'dynamic',label:'index '+(62+di)+' (dynamic)',bytes:1};
+      const bytes=1+1+Math.ceil(v.length*.75);
+      dyn.unshift({key,n,v}); added.push(key);
+      return {n,v,kind:'literal',label:'literal, name '+NAME[n]+', add as 62',bytes};
+    });
+    let h1=('GET '+path+' HTTP/1.1\r\n').length+('Host: shop.example.com\r\n').length+2;
+    h.forEach(([n,v])=>{ if(H1NAME[n]) h1+=(H1NAME[n]+': '+v+'\r\n').length; });
+    results.push({rows,h1,hp:rows.reduce((a,r)=>a+r.bytes,0),table:dyn.map(e=>({...e})),added});
+  });
+  const maxB=Math.max(...results.map(r=>r.h1));
+  const bars=document.getElementById('hpBars');
+  bars.innerHTML=results.map((r,i)=>'<div class="bargroup" data-g="'+i+'"><div class="bar h1b" style="height:'+(r.h1/maxB*100)+'%"><em>'+r.h1+'</em></div><div class="bar h2b" style="height:'+Math.max(1.5,r.hp/maxB*100)+'%"><em>'+r.hp+'</em></div></div>').join('');
+  const tabs=[...document.querySelectorAll('#fig4 [role=tab]')];
+  const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  function show(i, animate){
+    const R=results[i];
+    tabs.forEach((b,k)=>{ b.setAttribute('aria-selected',k===i?'true':'false'); b.tabIndex=k===i?0:-1; });
+    document.getElementById('hpRows').innerHTML=R.rows.map((r,k)=>'<tr class="'+(animate?'flash':'')+'" style="animation-delay:'+(k*60)+'ms"><td class="n">'+esc(r.n)+'</td><td class="v" title="'+esc(r.v)+'">'+esc(r.v)+'</td><td><span class="enc '+r.kind+'">'+r.label+'</span></td><td class="num">'+r.bytes+'</td></tr>').join('');
+    document.getElementById('hpTotal').innerHTML=R.hp+' B <span style="color:var(--muted);font-weight:500">vs '+R.h1+' B</span>';
+    document.getElementById('hpDyn').innerHTML=R.table.map((e,k)=>'<li class="'+(R.added.includes(e.key)?'new':'')+(animate&&R.added.includes(e.key)?' flash':'')+'"><span><b>'+(62+k)+'</b></span><span>'+esc(e.n)+': '+esc(e.v)+'</span></li>').join('');
+    bars.querySelectorAll('.bargroup').forEach(g=>g.classList.toggle('on', +g.dataset.g<=i));
+  }
+  tabs.forEach((b,k)=>{ b.addEventListener('click',()=>{ stopPlay(); show(k,!reduced); }); b.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ const n=(k+(e.key==='ArrowRight'?1:2))%3; tabs[n].focus(); stopPlay(); show(n,!reduced);} }); });
+  const pb=document.querySelector('[data-play4]'); let timer=0;
+  function stopPlay(){ clearTimeout(timer); timer=0; pb.textContent='Play'; }
+  function step(i){ show(i,!reduced); if(i<2) timer=setTimeout(()=>step(i+1),2200); else { timer=0; pb.textContent='Replay'; } }
+  pb.addEventListener('click',()=>{ if(timer){ stopPlay(); return; } pb.textContent='Pause'; step(0); });
+  show(1,false);
+})();
+
+/* ---------- Fig 5: connection migration ---------- */
+(function(){
+  const svg=document.getElementById('g5'); svg.setAttribute('viewBox','0 0 960 300');
+  const D5=6800, MOVE0=900, MOVE1=2700, SW=1800, RATE=100/4000, TCP_STALL=2300, QUIC_STALL=150, REST=3000;
+  el('rect',{x:16,y:10,width:452,height:84,rx:8,class:'box-sunk'},svg); txt(svg,30,30,'Home Wi-Fi','t-strong'); txt(svg,30,46,'client IP 192.168.1.23','t-lab');
+  el('rect',{x:492,y:10,width:452,height:84,rx:8,class:'box-sunk'},svg); txt(svg,930,30,'Cellular','t-strong','end'); txt(svg,930,46,'client IP 100.64.12.9','t-lab','end');
+  const phone=el('g',{},svg); el('rect',{x:-13,y:-23,width:26,height:46,rx:5,fill:'var(--ink)'},phone); el('rect',{x:-10,y:-18,width:20,height:33,rx:2,class:'f-surface'},phone); el('circle',{cx:0,cy:19,r:2,class:'f-surface'},phone);
+  const rows=[{y:122,name:'HTTP/2 over TCP',cls:'f-p2'},{y:212,name:'HTTP/3 over QUIC',cls:'f-p3'}];
+  const BX=250, BW=600;
+  rows.forEach(r=>{
+    txt(svg,16,r.y+14,r.name,'t-title');
+    r.id=txt(svg,16,r.y+34,'','t-lab');
+    el('rect',{x:BX,y:r.y+2,width:BW,height:16,rx:3,class:'f-sunk'},svg);
+    r.bar=el('rect',{x:BX,y:r.y+2,width:0,height:16,rx:3,class:r.cls},svg);
+    r.pct=txt(svg,BX+BW+10,r.y+15,'','t-strong');
+    r.st=txt(svg,BX,r.y+38,'','t-lab');
+    r.st2=txt(svg,BX,r.y+54,'','t-small');
+  });
+  const prog=(t,stall)=>Math.min(100, RATE*(t<SW?t:(t<SW+stall?SW:t-stall)));
+  function render(t){
+    const mp=clamp((t-MOVE0)/(MOVE1-MOVE0),0,1), e=mp<.5?2*mp*mp:1-Math.pow(-2*mp+2,2)/2;
+    phone.setAttribute('transform','translate('+(220+e*500)+',60)');
+    const after=t>=SW;
+    // TCP
+    const R0=rows[0], p0=prog(t,TCP_STALL), stalled0=after && t<SW+TCP_STALL;
+    R0.bar.setAttribute('width',BW*p0/100); R0.pct.textContent=Math.floor(p0)+'%';
+    R0.id.textContent = after ? '4-tuple 100.64.12.9:40022 → :443' : '4-tuple 192.168.1.23:52114 → :443';
+    R0.id.setAttribute('fill', stalled0?'var(--loss)':'var(--muted)');
+    if(!after){ R0.st.textContent='Downloading'; R0.st2.textContent='connection = (src IP, src port, dst IP, dst port)'; }
+    else if(stalled0){ const k=(t-SW)/TCP_STALL; R0.st.textContent='Old connection is dead. '+(k<.33?'New TCP handshake…':k<.66?'TLS handshake…':'Re-requesting with Range header…'); R0.st2.textContent='a new address means a new 4-tuple, which the server has never seen'; }
+    else if(p0<100){ R0.st.textContent='Resumed on a brand-new connection'; R0.st2.textContent='congestion window starts small again'; }
+    else { R0.st.textContent='Done'; R0.st2.textContent='paid 3 extra round trips plus the app’s retry logic'; }
+    R0.st.setAttribute('fill', stalled0?'var(--loss)':'var(--muted)');
+    // QUIC
+    const R1=rows[1], p1=prog(t,QUIC_STALL), validating=after && t<SW+600;
+    R1.bar.setAttribute('width',BW*p1/100); R1.pct.textContent=Math.floor(p1)+'%';
+    R1.id.textContent = 'connection ID 7c3e9a41b2d0' + (after?' · now via 100.64.12.9':' · via 192.168.1.23');
+    R1.id.setAttribute('fill','var(--muted)');
+    if(!after){ R1.st.textContent='Downloading'; R1.st2.textContent='connection = connection ID, whatever the address'; }
+    else if(validating){ R1.st.textContent='Same connection, new path: PATH_CHALLENGE → PATH_RESPONSE'; R1.st2.textContent='data keeps flowing while the new path is checked'; }
+    else if(p1<100){ R1.st.textContent='Still the same connection, still downloading'; R1.st2.textContent='no new handshake, no new request'; }
+    else { R1.st.textContent='Done'; R1.st2.textContent='the network change cost almost nothing'; }
+    R1.st.setAttribute('fill', validating?'var(--ok)':'var(--muted)');
+  }
+  player(document.getElementById('fig5'),{duration:D5,rest:REST,render,fmt:t=>(t/1000).toFixed(1)+' s'});
+})();
+})();
+</script>
+
+</body></html>
